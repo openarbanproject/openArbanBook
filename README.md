@@ -1,2 +1,3 @@
 # openArbanBook
 A recreation of Arban's Cornet Method
+This is the primary goal of the project at this time. Until there are more collaborators then it is not expected to be completed any time soon...

@@ -1,0 +1,8 @@
+It seemed more logical to not use relative mode for these exercises and I think that it was a good decision in the long run. It's easier to keep typing the same thing for the note that doesn't change. 
+
+\copyright notice had to be changed to \tagline for the longer exercises with 16th notes
+
+It was decided to put five keys per page for easier reading, and also so that there wasn't just a single spare key on the third page. 
+
+On exercise 4 it was decided to try to be uniform about the use of sharps and flats. In C major I used sharps going up, flats coming down; otherwise stick to the thing that is in the key signature. No double flats or double sharps.
+

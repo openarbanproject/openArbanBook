@@ -54,7 +54,7 @@
   \bar "||" \break
   
   \key bf \major
-  f2 g f a f bf g c
+  f2 g f a f bf f c'
   f, d' f, c' f, bf1 ~ bf4 r
   \bar "||" \break
   

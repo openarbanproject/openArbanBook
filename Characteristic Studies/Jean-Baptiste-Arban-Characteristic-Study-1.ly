@@ -1,6 +1,16 @@
 \version "2.18.2"
 \language "english"
 
+DCfine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.C. al fine" }
+}
+
+Fine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small \italic "fine" }
+}
+
 \book {
   \paper {
     indent = 0\mm
@@ -42,7 +52,7 @@
       e-. c,( b c) e-. g-. c-. e-. d-. b,( d) f-. af-. b-. e( d)
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
-      c-. g'-. e-. c-. g-. c-. g-. e-. c4 r\fermata \bar "|." \break
+      c-. g'-. e-. c-. g-. c-. g-. e-. c4 r\fermata \bar "||" \Fine \break
       
       \tuplet 6/4 { f'16([ g f] e[ f e] } \tuplet 6/4 { d[ e d] c[ d c] }
       \tuplet 6/4 { b[ c b] a[ b a] } \tuplet 6/4 { g[ a g] f[ g f]) }
@@ -100,7 +110,7 @@
       c-. fs( es fs) a,-. e'( ds e) fs,-. d'( cs d) d,( fs) a-. d-.
       g,( fs g) b-. d( g,) b-. d-. g4 r
       g,16( fs g) b-. d( g,) b-. d-. g-"rall..."( f) d-. b-. 
-      g-. f-. \mark "D.C. al Fine" d-. b-. \bar "||"
+      g-. f-. \DCfine d-. b-. \bar "|."
     }
   }
 }

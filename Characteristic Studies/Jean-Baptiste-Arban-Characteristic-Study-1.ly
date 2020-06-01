@@ -50,6 +50,7 @@ Fine = {
       d16) cs,-. d-. f-. a-. d-. f-. e-. \afterGrace ds2\trill( { cs16 ds }
       e16) e,-. ds-. e-. g-. c-. e-. g-. d-> cs,-> d-. f-. af-. b-. d-. f-.
       e-. c,( b c) e-. g-. c-. e-. d-. b,( d) f-. af-. b-. e( d)
+      c-. c,( b c) e-. g-. c-. e-. d-. b,( d) f-. af-. b-. e( d)
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
       c-. g'-. e-. c-. g-. c-. g-. e-. c4 r\fermata \bar "||" \Fine \break

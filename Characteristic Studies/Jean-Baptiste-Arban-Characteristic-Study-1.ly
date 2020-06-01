@@ -70,7 +70,12 @@
       \key c \minor
       ef'4( ~ ef8 d16) c g( fs g) a-. b-. c-. d-. ef-.
       g( af g fs g f d-.) b g8 fs16-. g-. a-. b-. c-. d-.
-      ef4( ~ ef8 d16) c g8[ \turn a] b[ \turn c]
+      ef4( ~ ef8 d16) c
+      \relative c'' {
+	\once \override TextScript.script-priority = #-100
+	g8 ^\markup { \small \sharp }  \turn a
+	}
+      b[ \turn c]
       d16-. g,( fs g fs g) b-. d-. g4 r8 d8-.
       d4 ~ d16 c-. a-. fs-. d( fs) a-. c-. fs( ef) d-. c-.
       bf4 ~ bf16 g-. d-. bf-. g8( g') g-. bf-.
@@ -83,7 +88,7 @@
       cs-. a,16-. cs-. e-. a-. cs-. e-. g-. e( ds e) a8.( g16)
       fs8-. a,,16-. d-. fs-. a-. d-. fs-. a8-. fs,16-. a-. d-. fs( e) d-.
       cs8-. a,16-. cs-. e-. a-. cs-. e-. g-. e( ds e) a8.( g16)
-      fs-. d( cs d) fs( d) a-. fs-. d4 d'8. c16 \bar "||" \break
+      fs-. d( cs d) fs( d) a-. fs-. d4 d'8.( c16) \bar "||" \break
       
       \key g \major
       b( c b as) b-. g( fs g) d-. fs( g) b-. d8.( c16)

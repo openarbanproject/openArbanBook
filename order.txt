@@ -1,0 +1,18 @@
+I think pretty soon it's going to be necessary to keep an eye on the order of
+all of these PDFs we're creating so that when we eventually put a book together
+it's not going to be too hard to remember. The reason this is important is that
+already I've written out the section that has a title "Syncopation" and it
+started with an exercise numbered "1". The next part of the book is exercises
+"with a dotted eighth note followed by a sixteeth note" and that continues from
+exercise "13". It then goes into another group of exercises that aren't
+labelled at all but carry on the same set of numbers... Hence the necessity of
+this file! Names on this list should match folder names and stated the 
+numbering of the exercises in that folder.
+
+Initial Exercises (01-50)
+Sycopation (01-12)
+Dotted Rhythms (13-18)
+
+Intervals (01-12)
+
+Characteristic Studies (01-12)

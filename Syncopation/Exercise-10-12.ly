@@ -31,7 +31,7 @@
     \relative c'
     {
       \numericTimeSignature \time 2/4
-      c16-. c8-^ d16-. e-. e8-^ f16-. g-. g8-^ e16-. c-. c8-^ d16-.
+      c16-.\mark "Allegro" c8-^ d16-. e-. e8-^ f16-. g-. g8-^ e16-. c-. c8-^ d16-.
       e16-"sim." e8 f16 g g8 a16 b b8 c16 d4
       f16 f8 e16 d d8 c16 b b8 a16 g g8 f16 e e8 d16 c c8 d16 e e8 f16 g4
       g'16 g8 f16 e e8 d16 c c8 b16 a4 f'16 f8 e16 d d8 c16 b b8 a16 g4

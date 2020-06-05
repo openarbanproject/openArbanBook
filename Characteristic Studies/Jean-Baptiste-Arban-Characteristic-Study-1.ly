@@ -1,6 +1,16 @@
 \version "2.18.2"
 \language "english"
 
+DCfine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.C. al fine" }
+}
+
+Fine = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small \italic "fine" }
+}
+
 \book {
   \paper {
     indent = 0\mm
@@ -40,9 +50,10 @@
       d16) cs,-. d-. f-. a-. d-. f-. e-. \afterGrace ds2\trill( { cs16 ds }
       e16) e,-. ds-. e-. g-. c-. e-. g-. d-> cs,-> d-. f-. af-. b-. d-. f-.
       e-. c,( b c) e-. g-. c-. e-. d-. b,( d) f-. af-. b-. e( d)
+      c-. c,( b c) e-. g-. c-. e-. d-. b,( d) f-. af-. b-. e( d)
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
       c( c,) e-. g-. c-. e-. g-. c,,-. b( d) f-. g-. b-. d-. f-. b,-.
-      c-. g'-. e-. c-. g-. c-. g-. e-. c4 r\fermata \bar "|." \break
+      c-. g'-. e-. c-. g-. c-. g-. e-. c4 r\fermata \bar "||" \Fine \break
       
       \tuplet 6/4 { f'16([ g f] e[ f e] } \tuplet 6/4 { d[ e d] c[ d c] }
       \tuplet 6/4 { b[ c b] a[ b a] } \tuplet 6/4 { g[ a g] f[ g f]) }
@@ -70,7 +81,12 @@
       \key c \minor
       ef'4( ~ ef8 d16) c g( fs g) a-. b-. c-. d-. ef-.
       g( af g fs g f d-.) b g8 fs16-. g-. a-. b-. c-. d-.
-      ef4( ~ ef8 d16) c g8[ \turn a] b[ \turn c]
+      ef4( ~ ef8 d16) c
+      \relative c'' {
+	\once \override TextScript.script-priority = #-100
+	g8 ^\markup { \small \sharp }  \turn a
+	}
+      b[ \turn c]
       d16-. g,( fs g fs g) b-. d-. g4 r8 d8-.
       d4 ~ d16 c-. a-. fs-. d( fs) a-. c-. fs( ef) d-. c-.
       bf4 ~ bf16 g-. d-. bf-. g8( g') g-. bf-.
@@ -83,7 +99,7 @@
       cs-. a,16-. cs-. e-. a-. cs-. e-. g-. e( ds e) a8.( g16)
       fs8-. a,,16-. d-. fs-. a-. d-. fs-. a8-. fs,16-. a-. d-. fs( e) d-.
       cs8-. a,16-. cs-. e-. a-. cs-. e-. g-. e( ds e) a8.( g16)
-      fs-. d( cs d) fs( d) a-. fs-. d4 d'8. c16 \bar "||" \break
+      fs-. d( cs d) fs( d) a-. fs-. d4 d'8.( c16) \bar "||" \break
       
       \key g \major
       b( c b as) b-. g( fs g) d-. fs( g) b-. d8.( c16)
@@ -95,7 +111,7 @@
       c-. fs( es fs) a,-. e'( ds e) fs,-. d'( cs d) d,( fs) a-. d-.
       g,( fs g) b-. d( g,) b-. d-. g4 r
       g,16( fs g) b-. d( g,) b-. d-. g-"rall..."( f) d-. b-. 
-      g-. f-. \mark "D.C. al Fine" d-. b-. \bar "||"
+      g-. f-. \DCfine d-. b-. \bar "|."
     }
   }
 }

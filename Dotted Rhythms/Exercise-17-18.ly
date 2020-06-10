@@ -68,8 +68,8 @@
       bf16. af32 g16. f32 ef16. d32 c16. bf32 af16. g32 f16. ef32 d4
       af''16. g32 af16. g32 f16. ef32 d16. c32 bf16. af32 g16. f32 ef4
       ds16. b32 as16. b32 e16. b32 fs'16. b,32 gs'16. b,32 a'16. b,32 b'4
-      gs16. e32 ds16. e32 g16. e32 a16. e32 b'16. e,32 cs'16. e,32 d8. e16 \bar "||"
-      e'16. d32 c16. b32 a16. gs32 a16. b32 c16. b32 c16. d32 e16. f32 e8
+      gs16. e32 ds16. e32 g16. e32 a16. e32 b'16. e,32 cs'16. e,32 d'8. ds16 \bar "||"
+      e16. d32 c16. b32 a16. gs32 a16. b32 c16. b32 c16. d32 e16. f32 e8
       f16. e32 d16. c32 b16. c32 d16. e32 d16. c32 b16. a32 gs16. b32 e,8
       d'16. e32 c16. e32 b16. e32 a,16. e'32 gs,16. e'32 a,16. e'32 b16. e32 c16. e32
       b16. e32 a,16. e'32 gs,16. e'32 b16. e32 a,16. e'32 gs,16. e'32 a,16. e'32 gs,16. e'32 

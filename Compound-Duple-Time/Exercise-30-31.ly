@@ -67,9 +67,17 @@
       \key c \major
       \tempo "Allegretto"
       c'8. d16 c8-. 
+      \tempo 4. = 52 - 96
       b4 b8-. b8. c16 b8-. e,4 e8-. e8. fs16 gs8-. 
       a4\< b8-. c4 d8-. \! e4->( d8) c8. d16 c8-.
-      b4 b8 b8. c16 b8 e,4 e8 e8. fs16 gs8
+      b4 b8 b8. c16 b8 e,4 e8 e8. fs16 gs8 a4 b8\< c d ds\! e4. e8. fs16 e8
+      cs4 cs8 cs8.\< e16 a8\! a4(\> gs8)\! d8. e16 d8 b4 b8 b8.\< d16 fs8\! fs4(\> e8)\! e8. fs16 e8
+      cs4 cs8 cs8. e16 a8 a4 gs8 gs8. fs16 e8 ds4 b8 b8. cs16 ds8 e4. e8. f16 e8
+      c4 e8 g,4 f'8 e4. g8. a16 g8 fs4 f8 g,4 c8 d4. e8. f16 e8 
+      c4 e8 b4 e8 a,4 e'8 e8. f16 e8 gs,4 e'8 e8. f16 e8 b4. c8. d16 c8
+      b4 b8 b8. c16 b8 e,4 e8 e8. fs16 gs8 a4\< b8 c4 d8\! e4->( d8) c8. d16 c8
+      b4 b8 b8. c16 b8 e,4 e8 e8.\< fs16 gs8\! a4 e'8\> gs,4 e'8\! 
+      a,8. e'16 e8 c8. e16 e8 b8. e16 e8 gs,8. e'16 e8 a,8. e'16 e8 c8. e16 e8 b8. e16 e8 gs,8. e'16 e8 a,8. c16 c8 a r r
       \bar "|." 
     }
   } 

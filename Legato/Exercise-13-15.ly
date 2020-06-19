@@ -83,10 +83,15 @@
       \numericTimeSignature \time 3/4
       \key c \major
       \tempo "Andante"
-      g'4\p(\< f'4.\> e8)\!
+      g'4\p(\< f'4.\>
       \tempo 4 = 72
-       e2( gs,4) \breathe
-      \bar "|."
+      e8)\! e2( gs,4) \breathe
+      a4(\< g'4.\> f8)\! f2( af,4) \breathe
+      g4-"sim."( f'4. e8) fs,4( e'4. d8) d,4( c'4. b8) g2. \breathe
+      bf4( af'4. g8) g2( g,4) \breathe fs( ef'4. d8) d2 f,4 \breathe
+      e4( df'4. c8) d,4( c'4. bf8) cs,4( af'4. g8) g,2. \breathe
+      g'4( f'4. e8) e2( gs,4) \breathe a4( g'4. f8) f2( f,4) \breathe
+      e4( d'4. c8) d,4( c'4. b8) b,4( a'4. g8) c2. \bar "|."
     }
   }
 }

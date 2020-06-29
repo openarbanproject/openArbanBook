@@ -60,4 +60,27 @@
     }
   }
 
+  \score {
+    \header {
+      piece = "EXERCISE 20"
+    }
+    \layout { \context { \Score \remove "Bar_number_engraver" }}
+    \relative c''
+    {
+      \numericTimeSignature \time 4/4
+      \key c \major
+      \override Fingering.direction = #DOWN
+      g16-1-3( b-1-3 g b g b g b  g b g b g b g b) 
+      af-2-3( c-2-3 af c af c af c af c af c af c af c)
+      \repeat percent 4 { a-1-2 cs-1-2 a-"sim." cs} \repeat percent 4 { bf-1 d-1 bf d }
+     \repeat percent 4 {  b-1-3 d-1-3 b d } \repeat percent 4 {  b-2 ds-2 b ds }
+     \repeat percent 4 { c-2-3 ef-2-3 c ef } \repeat percent 4 { c-0 e-0 c e } 
+      \repeat percent 4 { cs-1-2 e-1-2 cs e } \repeat percent 4 { d-1 f-1 d f }
+      \repeat percent 4 { ds-2 fs-2 ds fs } \repeat percent 4 { e-0 g-0 e g }
+      \repeat percent 4 { fs ds fs ds } \repeat percent 4 { f d f d }
+      \repeat percent 4 { e cs e cs } \repeat percent 4 { e c e c }
+      \repeat percent 4 { ef c ef c } \repeat percent 4 {  ds b ds b }
+     \repeat percent 4 {  d b d b } c1 \bar "|."
+    }
+  }
 }

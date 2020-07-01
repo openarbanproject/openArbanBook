@@ -3,12 +3,12 @@
 
 DCfine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.C. al fine" }
+  \mark \markup { \small "D.C. al Fine" }
 }
 
 Fine = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small \italic "fine" }
+  \mark \markup { \small \italic "Fine" }
 }
 
 \book {
@@ -36,9 +36,6 @@ Fine = {
   }
   
   \score {
-    \header {
-      % title = "CHARACTERISTIC STUDY No. 1"
-    }
     \relative c'
     { \numericTimeSignature \time 4/4
       \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible

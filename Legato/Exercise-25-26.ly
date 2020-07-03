@@ -67,10 +67,27 @@
   \layout { \context { \Score \remove "Bar_number_engraver" }}
   \relative c'
   {
+    \override Fingering.direction = #DOWN
     \numericTimeSignature \time 4/4
     \key c \major
-    \tempo 4 = 96
-    \bar "|."
+    \tempo "Allegro"
+    \appoggiatura {g'16-1-3 b} \repeat percent 4 { g8 r }
+    \appoggiatura {af16-2-3 c} \repeat percent 4 { af8 r }
+    \appoggiatura {a16-1-2 cs} \repeat percent 4 { a8 r }
+    \appoggiatura {bf16-1 d} \repeat percent 4 { bf8 r }
+    \appoggiatura {b16-1-3 d} \repeat percent 4 { b8 r }
+    \appoggiatura {b16-2 ds} \repeat percent 4 { b8 r }
+    \appoggiatura {c16-2-3 ef} \repeat percent 4 { c8 r }
+    \appoggiatura {c16-0 e} \repeat percent 4 { c8 r }
+    \appoggiatura {cs16-1-2 e} \repeat percent 4 { cs8 r }
+    \appoggiatura {d16-1 f} \repeat percent 4 { d8 r }
+    \appoggiatura {ds16-2 fs} \repeat percent 4 { ds8 r }
+    \appoggiatura {e16-0 g} \repeat percent 4 { e8 r }
+    \appoggiatura {f16-1-3 g} \repeat percent 4 { f8 r }
+    \appoggiatura {d16-1 f} \repeat percent 4 { d8 r }
+    \appoggiatura {b16-1-3 d} \repeat percent 4 { b8 r }
+    \appoggiatura {c16-0 e} c8 r \appoggiatura {c16-0 e} c8 r 
+    c8 r r4 \bar "|."
   }
 }
 }

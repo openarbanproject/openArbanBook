@@ -110,5 +110,6 @@ Fine = {
       g,16( fs g) b-. d( g,) b-. d-. g-"rall..."( f) d-. b-. 
       g-. f-. \DCfine d-. b-. \bar "|."
     }
+    \midi {}
   }
 }

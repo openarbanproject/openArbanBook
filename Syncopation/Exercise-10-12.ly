@@ -51,8 +51,8 @@
     \relative c'
     {
       \numericTimeSignature \time 4/4
-      g'8-. e'4-^ d-^ g,8-. e-. c-. b-. d4-^ f-^ g8-. b-. d-. 
-      f-. d4-^ b-^ g8-. fs-. f-. e-. f4-^ f8-. g-. r r4
+      g'8-. e'4-^ c-^ g,8-. e-. c-. b-. d4-^ f-^ g8-. b-. d-. 
+      f-. d4-^ b-^ g8-. fs-. f-. e-. f4-^ fs8-. g-. r r4
       g8-"sim." e'4 c8 a f'4 d8 b g'4 e8 c4 r 
       bf8 g'4 bf,8 a f'4 af,8 g e'4 g,8 fs4 r
       f8 d'4 f,8 e c'4 ef,8 d a'4 c,8 b4 r b'8 c4 cs8 d4 r e8 f4 fs8 g4 r

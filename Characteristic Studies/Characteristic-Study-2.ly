@@ -67,7 +67,16 @@ Fine = {
       e4.( ds16) cs b8 gs'4-> cs,8 b e4-> gs,8 fs cs'4-> e,8
       ds-. b'-._"rall" a-. b-. fs-. b-. ds,-. b'\fermata \bar "||"
 
-      
+      e,16( gs b e ds c a fs) e(gs b e ds c a fs)
+      e( gs b e ds c a fs) ds( fs a c b a fs ds)
+      e( gs) b-. e-. gs-( fs) e-. cs-. b( e) gs,( b) a(ds ) fs,( a)
+      gs( b) e,( gs) fs( a) ds,( fs) e( e') ds-. cs-. b-. a-. gs-. fs-.
+      e( gs b e ds c a fs) ds( fs a c b a fs ds)
+      b'( e) gs-. fs-. e ds-. cs-. b-. a( cs) fs-. e-. ds-. cs-. b-. a-.
+      gs( b) e-. ds-. cs-. b-. a-. gs-. fs( a) ds-. cs-. b-. a-. gs-. fs-.
+      e( gs b e,) ds( fs b ds,) e( gs b e,) ds( fs b ds,)
+      e( gs b e ds c a fs) e( gs b e ds c a fs)
+      e( gs) gs gs gs( b) b b b( e) e e e,4 \bar "||"
     }
   }
 }

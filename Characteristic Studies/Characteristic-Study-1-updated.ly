@@ -1,13 +1,13 @@
-\version "2.18.2"
+\version "2.24.0"
 \language "english"
 
 DCfine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)
   \mark \markup { \small "D.C. al Fine" }
 }
 
 Fine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)
   \mark \markup { \small \italic "Fine" }
 }
 
@@ -36,6 +36,7 @@ Fine = {
   }
   
   \score {
+   \layout { \context { \Score \remove "Bar_number_engraver" }}
     \relative c'
     { \numericTimeSignature \time 4/4
       \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
@@ -110,6 +111,5 @@ Fine = {
       g,16( fs g) b-. d( g,) b-. d-. g-"rall..."( f) d-. b-. 
       g-. f-. \DCfine d-. b-. \bar "|."
     }
-    \midi {}
   }
 }

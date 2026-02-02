@@ -61,8 +61,13 @@ Fine = {
       ef2~ ef8 g( c bf)
 
       \key e \major
-      a2~ a8 fs( ds a')
-      gs2~ gs16
+      a2~\f a8 fs( ds a')
+      gs2~ gs16( b) e-. ds-. cs-. b-. a-. gs-.
+      gs4\< ( fs8) gs-. a-. b-. cs-. ds-. \!
+      e4.( ds16) cs b8 gs'4-> cs,8 b e4-> gs,8 fs cs'4-> e,8
+      ds-. b'-._"rall" a-. b-. fs-. b-. ds,-. b'\fermata \bar "||"
+
+      
     }
   }
 }

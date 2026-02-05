@@ -1,13 +1,13 @@
-\version "2.18.2"
+\version "2.24.0"
 \language "english"
 
 DCfine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)
   \mark \markup { \small "D.C. al Fine" }
 }
 
 Fine = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)
   \mark \markup { \small \italic "Fine" }
 }
 

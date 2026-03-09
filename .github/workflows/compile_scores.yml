@@ -1,0 +1,23 @@
+name: Compile LilyPond Scores
+on: [push] # Run every time new files are pushed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up LilyPond
+        uses: codello/setup-lilypond@main
+        with:
+          lilypond-version: 2.24 
+
+      - name: Compile all .ly files
+        run: lilypond *.ly
+
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: scores-pdf
+          path: "*.pdf"

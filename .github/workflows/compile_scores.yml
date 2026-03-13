@@ -1,8 +1,11 @@
-name: Compile LilyPond Scores
-on: [push] # Run every time new files are pushed
+name: Update Master Score Folder
+on: [push]
+
+permissions:
+  contents: write  # Allows the script to save PDFs back to GitHub
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -11,14 +14,15 @@ jobs:
       - name: Set up LilyPond
         uses: codello/setup-lilypond@main
         with:
-          lilypond-version: 2.24 
+          lilypond-version: 2.24
 
-      - name: Compile all LilyPond files
+      - name: Compile ALL scores to a central folder
         run: |
-          find . -name "*.ly" -exec lilypond "{}" +
+          mkdir -p master_folder
+          find . -name "*.ly" -exec lilypond -o master_folder/ "{}" +
 
-      - name: Upload PDF Artifacts
-        uses: actions/upload-artifact@v4
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          name: scores-pdf
-          path: "**/*.pdf"
+          folder: master_folder # Folder
+          branch: gh-pages      # "Website"

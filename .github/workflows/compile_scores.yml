@@ -22,57 +22,56 @@ jobs:
           find . -name "*.ly" -print0 | xargs -0 -I {} lilypond -o master_folder/ "{}"
 
       - name: Generate Index Page
-              run: |
-                cd master_folder
-                cat <<EOF > index.html
-                <html>
-                <head>
-                  <title>Grand Method For Cornet</title>
-                  <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-                    
-                    body { 
-                      font-family: 'Libre Baskerville', serif; 
-                      background-color: #fdfaf0; 
-                      color: #2c2c2c; 
-                      padding: 40px; 
-                      max-width: 800px; 
-                      margin: auto; 
-                      border: 1px solid #dcdcdc;
-                      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-                    }
+        run: |
+            cd master_folder
+            cat <<EOF > index.html
+            <html>
+            <head>
+              <title>Grand Method For Cornet</title>
+              <style>
+                @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+                   
+                body { 
+                  font-family: 'Libre Baskerville', serif; 
+                  background-color: #fdfaf0; 
+                  color: #2c2c2c; 
+                  padding: 40px; 
+                  max-width: 800px; 
+                  margin: auto; 
+                  border: 1px solid #dcdcdc;
+                  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+                }
       
-                    .header-box {
-                      text-align: center;
-                      border: 4px double #4b2e1e;
-                      padding: 40px 20px;
-                      margin-bottom: 40px;
-                    }
+                .header-box {
+                  text-align: center;
+                  border: 4px double #4b2e1e;
+                  padding: 40px 20px;
+                  margin-bottom: 40px;
+                }
       
-                    .cornet-illustration {
-                      width: 350px;
-                      /* This makes the black lines look slightly brown/aged */
-                      filter: sepia(0.6) contrast(1.1) brightness(0.9); 
-                      margin-bottom: 20px;
-                    }
+                .cornet-illustration {
+                  width: 350px;
+                  filter: sepia(0.6) contrast(1.1) brightness(0.9); 
+                  margin-bottom: 20px;
+                }
       
-                    h1 { 
-                      font-size: 3em;
-                      margin: 0;
-                      font-variant: small-caps;
-                      letter-spacing: 3px;
-                      color: #1a1a1a;
-                    }
+                h1 { 
+                  font-size: 3em;
+                  margin: 0;
+                  font-variant: small-caps;
+                  letter-spacing: 3px;
+                  color: #1a1a1a;
+                }
       
-                    .subtitle {
-                      font-style: italic;
-                      font-size: 1.1em;
-                      margin-top: 15px;
-                      display: block;
-                      color: #4b2e1e;
-                    }
+                .subtitle {
+                  font-style: italic;
+                  font-size: 1.1em;
+                  margin-top: 15px;
+                  display: block;
+                  color: #4b2e1e;
+                }
       
-                    .divider { font-size: 2em; margin: 20px 0; color: #8b4513; text-align: center; }
+                .divider { font-size: 2em; margin: 20px 0; color: #8b4513; text-align: center; }
       
                     ul { list-style: none; padding: 0; }
                     li { 
@@ -80,9 +79,11 @@ jobs:
                       text-align: center;
                       border-bottom: 1px dotted #d3c7b1;
                       padding-bottom: 8px;
-                    }
-                    a { text-decoration: none; color: #4b2e1e; font-weight: bold; font-size: 1.1em; }
-                    a:hover { color: #8b4513; text-decoration: underline; }
+                }
+             
+                a { text-decoration: none; color: #4b2e1e; font-weight: bold; font-size: 1.1em; }
+                a:hover { color: #8b4513; text-decoration: underline; }
+                
                   </style>
                 </head>
                 <body>

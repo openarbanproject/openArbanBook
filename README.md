@@ -2,10 +2,11 @@
 
 ## About
 A recreation of Arban's Cornet Method
-This is the primary goal of the project at this time. Until there are more collaborators then it is not expected to be completed any time soon...
+This is the primary goal of the project at this time. Until there are more collaborators then it is not expected to be completed soon...
 
 ## Downloads
-You can download a copy of the Open Arban Book in PDF format, as it is right now, from [This website](https://openarbanproject.github.io/openArbanBook/)
+You can download each section of the Open Arban Book in PDF format, as it is right now, from [This website](https://openarbanproject.github.io/openArbanBook/)
+If you want to make your own edits of the scores then you'll need to download the lilypond files.
 Be aware that the book is incomplete and may also contain errors as we are a small team and there are a lot of notes! 
 Feel free to let us know what you find in the repo Discussions or make a PR!
 

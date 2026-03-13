@@ -15,23 +15,42 @@ jobs:
         uses: codello/setup-lilypond@main
         with:
           lilypond-version: 2.24
-
-      - name: Compile ALL scores to a central folder
+      - name: Compile ALL scores
         run: |
           mkdir -p master_folder
-          # Find all .ly files and compile them into the master_folder
-          find . -name "*.ly" -exec lilypond -o master_folder/ "{}" +
+          # Using -print0 handles filenames with spaces safely
+          find . -name "*.ly" -print0 | xargs -0 -I {} lilypond -o master_folder/ "{}"
 
       - name: Generate Index Page
         run: |
           cd master_folder
-          echo "<html><head><title>My LilyPond Library</title></head><body>" > index.html
-          echo "<h1>My Sheet Music Library</h1><ul>" >> index.html
-          # Loop through every PDF and create a link for it
+          cat <<EOF > index.html
+          <html>
+          <head>
+            <title>My LilyPond Library</title>
+            <style>
+              body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; background: #f4f4f9; }
+              h1 { color: #333; border-bottom: 2px solid #ccc; }
+              ul { list-style: none; padding: 0; }
+              li { background: #fff; margin: 5px 0; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+              a { text-decoration: none; color: #0066cc; font-weight: bold; display: block; }
+              a:hover { color: #003366; }
+              .footer { font-size: 0.8em; color: #666; margin-top: 20px; }
+            </style>
+          </head>
+          <body>
+            <h1>🎼 My Sheet Music Library</h1>
+            <ul>
+          EOF
+
+          # Add each PDF to the list
           for f in *.pdf; do
-            echo "<li><a href=\"$f\">$f</a></li>" >> index.html
+            if [ -f "$f" ]; then
+              echo "<li><a href=\"$f\">📄 ${f%.pdf}</a></li>" >> index.html
+            fi
           done
-          echo "</ul><p>Last updated: $(date)</p></body></html>" >> index.html
+
+          echo "</ul><div class='footer'>Last updated: $(date)</div></body></html>" >> index.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

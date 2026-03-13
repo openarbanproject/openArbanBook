@@ -109,7 +109,7 @@
       e) e( a,) a( cs) cs( e) e( d) d( a) a( d) d( f) f( |
       e) e( a,) a( cs) cs( e) e( d) d( cs) cs( d) d( cs) cs( |
       d) d( cs) cs( d) d( cs) cs( d4 f8. f16 |
-      d1, \fermata \bar "|."
+      d,1 \fermata \bar "|."
     }
   }
 }

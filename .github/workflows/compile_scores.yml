@@ -1,8 +1,8 @@
-name: Update Master Score Folder
+name: Update Master Score Library
 on: [push]
 
 permissions:
-  contents: write  # Allows the script to save PDFs back to GitHub
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -19,10 +19,22 @@ jobs:
       - name: Compile ALL scores to a central folder
         run: |
           mkdir -p master_folder
+          # Find all .ly files and compile them into the master_folder
           find . -name "*.ly" -exec lilypond -o master_folder/ "{}" +
+
+      - name: Generate Index Page
+        run: |
+          cd master_folder
+          echo "<html><head><title>My LilyPond Library</title></head><body>" > index.html
+          echo "<h1>My Sheet Music Library</h1><ul>" >> index.html
+          # Loop through every PDF and create a link for it
+          for f in *.pdf; do
+            echo "<li><a href=\"$f\">$f</a></li>" >> index.html
+          done
+          echo "</ul><p>Last updated: $(date)</p></body></html>" >> index.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: master_folder # Folder
-          branch: gh-pages      # "Website"
+          folder: master_folder
+          branch: gh-pages

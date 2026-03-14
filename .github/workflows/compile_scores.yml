@@ -16,10 +16,26 @@ jobs:
         with:
           lilypond-version: 2.24
 
-      - name: Compile ALL scores
+      - name: Prepare Master Folder
         run: |
           mkdir -p master_folder
-          find . -name "*.ly" -print0 | xargs -0 -I {} lilypond -o master_folder/ "{}"
+          # Pull existing PDFs from the gh-pages branch so they aren't lost
+          git fetch origin gh-pages
+          git --work-tree=master_folder checkout origin/gh-pages -- . || echo "First run, nothing to fetch"
+
+      - name: Compile CHANGED scores only
+        run: |
+          # Get list of added or modified .ly files
+          # We compare the current commit (HEAD) to the previous one (HEAD^)
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.ly$' || true)
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No .ly files changed. Skipping LilyPond."
+          else
+            echo "Compiling: $CHANGED_FILES"
+            # Compile each changed file into the master_folder
+            echo "$CHANGED_FILES" | xargs -I {} lilypond -o master_folder/ "{}"
+          fi
 
       - name: Generate Index Page
         run: |
@@ -32,7 +48,7 @@ jobs:
               @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
               body { font-family: 'Libre Baskerville', serif; background-color: #fdfaf0; color: #2c2c2c; padding: 40px; max-width: 800px; margin: auto; border: 1px solid #dcdcdc; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
               .header-box { text-align: center; border: 4px double #4b2e1e; padding: 40px 20px; margin-bottom: 40px; }
-              .cornet-illustration { width: 350px; height: auto; filter: sepia(0.6) contrast(1.1) brightness(0.9); margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; border-radius: 2px; opacity: 0.95; mix-blend-mode: multiply; }
+              .cornet-illustration { width: 350px; height: auto; filter: sepia(0.6) contrast(1.1) brightness(0.9); margin-bottom: 20px; display: block; mix-blend-mode: multiply; margin-left: auto; margin-right: auto; border-radius: 2px; opacity: 0.95; }
               h1 { font-size: 3em; margin: 0; font-variant: small-caps; letter-spacing: 3px; color: #1a1a1a; }
               .subtitle { font-style: italic; font-size: 1.1em; margin-top: 15px; display: block; color: #4b2e1e; }
               .divider { font-size: 2em; margin: 20px 0; color: #8b4513; text-align: center; }

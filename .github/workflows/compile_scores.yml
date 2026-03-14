@@ -43,12 +43,12 @@ jobs:
           cat << 'EOF' > index.html
           <html>
           <head>
-            <title>🎼  Grand Method For Cornet</title>
+            <title>Grand Method For Cornet</title>
             <style>
               @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
               body { font-family: 'Libre Baskerville', serif; background-color: #fdfaf0; color: #2c2c2c; padding: 40px; max-width: 800px; margin: auto; border: 1px solid #dcdcdc; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
               .header-box { text-align: center; border: 4px double #4b2e1e; padding: 40px 20px; margin-bottom: 40px; }
-              .cornet-illustration { width: 350px; height: auto; filter: sepia(0.6) contrast(1.1) brightness(0.9); margin-bottom: 20px; display: block; mix-blend-mode: multiply; margin-left: auto; margin-right: auto; border-radius: 2px; opacity: 0.95; }
+              .cornet-illustration { width: 350px; height: auto; margin-bottom: 20px; display: block; mix-blend-mode: multiply; margin-left: auto; margin-right: auto; border-radius: 2px; opacity: 0.95; }
               h1 { font-size: 3em; margin: 0; font-variant: small-caps; letter-spacing: 3px; color: #1a1a1a; }
               .subtitle { font-style: italic; font-size: 1.1em; margin-top: 15px; display: block; color: #4b2e1e; }
               .divider { font-size: 2em; margin: 20px 0; color: #8b4513; text-align: center; }
@@ -61,7 +61,7 @@ jobs:
           <body>
             <div class="header-box">
               <img src="https://raw.githubusercontent.com/openarbanproject/collaboratorsPack/master/Cornet_1886.png" class="cornet-illustration">
-              <h1>Grand Method For Cornet</h1>
+              <h1>🎼  Grand Method For Cornet</h1>
               <span class="subtitle">as it is, from the Open Arban Project</span>
             </div>
             <div class="divider">❦</div>

@@ -1,0 +1,72 @@
+\version "2.24"
+\language "english"
+
+\book {
+  \paper {
+    indent = 0\mm
+    scoreTitleMarkup = \markup {
+      \fill-line {
+        \null
+        \fontsize #4 \bold \fromproperty #'header:piece
+        \fromproperty #'header:composer
+      }
+    }
+    fonts = #
+  (make-pango-font-tree
+   "Lato"
+   "Lato"
+   "Liberation Mono"
+   (/ (* staff-height pt) 2.5))
+  }
+  \header {  
+            tagline = "This work is licensed under a CC BY-SA 4.0 license."
+            composer = " "
+            title = "CHARACTERISTIC STUDY No. 9 - Incomplete"
+            dedication = "openArbanProject"
+  }
+  
+  \score {
+   \layout { \context { \Score \remove "Bar_number_engraver" }}
+    \relative c'
+    { \tempo Allegro
+  \time 4/4 
+  \key bf \major
+  bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
+  f( g) a g f ef d c bf a g f ef d c bf |
+  a8( c16) f a( c,) f a c f( g f) ef c a f | 
+  bf ef( f) d bf cs( d) bf f a( bf) f d e( f) d |
+  bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
+  f( g) a g f ef d c bf a g f ef d c bf |
+  a8( c16) f a( c,) f a c f( g f) ef c a f | 
+  bf a( bf) f' d bf f d bf4 r | \break
+
+  g''8 g16 a bf( a) g fs g( f) ef d ef( d) c bf |
+  a( fs) a c ef( d cs d) a( fs) a c ef( d cs d) |
+  d( fs) fs( ef?) ef( d) d( cs) d( ef) ef( d) d( c) bf( a) |
+  g( a g fs g) gs a bf b c cs d ef e f fs |
+  g8 g16 a bf( a) g fs g( f) ef d ef( d) c bf |
+  a( fs) a c ef( d cs d) a( fs) a c ef( d cs d) |
+  d( fs) fs( ef) ef( d) d( cs) d( ef) ef( d) d( c) bf( a) |
+  g g( a g fs g) bf d g4 r8 d |
+  
+  d16( d,) e fs g a bf c d( a) bf c d e fs g |
+  fs d( cs d ef d cs d) d,8( d') d d |
+  ef16( d) d d cs( d) d d a( bf) bf bf fs( g) g g |
+  a8( gs16 a gs a c bf) a4 r8 d |
+  d16( d,) e fs g a bf c d( a) bf c d e fs g |
+  ef g( fs g a g fs g) c, c( b c d c b c) |
+  f f( e f g f e f) ef f,( e f) c' f,( e f) |
+  bf bf( a bf c bf a bf) bf,4 r8 d' |
+  d16( f) f( ef) ef( d) d( c) c( bf) bf( a) a( g) g( f) |
+  d'( bf,) d f bf d f g f d( cs d cs d cs d) |
+  g( f) ef c a f ef c a( c) ef f a( c) f ef |
+  d2 r8 d d d |
+
+  f16( ef) fs,( g) c4~ c8 b16( c b c d ef) |
+  g( f) e,( f) d'4~ d8 cs16( d cs d \acciaccatura { f } ef16. d32) |
+  d16( c) e,( f) ef'8. d16 d( c) e,( f) bf( a d16. c32) |
+  bf2. r8 d |
+
+    }
+   }
+  }

@@ -26,6 +26,7 @@
   }
   
   \score {
+% Transcribed from 1864 Edition, Page 201
    \layout { \context { \Score \remove "Bar_number_engraver" }}
     \relative c'
     { \tempo Allegro

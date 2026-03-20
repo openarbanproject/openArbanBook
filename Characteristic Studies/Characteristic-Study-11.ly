@@ -22,7 +22,7 @@
   \header {  
             tagline = "This work is licensed under a CC BY-SA 4.0 license."
             composer = " "
-            title = "CHARACTERISTIC STUDY No. 11"
+            title = "CHARACTERISTIC STUDY No. 11 - incomplete"
             dedication = "openArbanProject"
   }
   

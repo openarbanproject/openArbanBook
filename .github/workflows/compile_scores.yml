@@ -23,18 +23,26 @@ jobs:
           git fetch origin gh-pages
           git --work-tree=master_folder checkout origin/gh-pages -- . || echo "First run, nothing to fetch"
 
-      - name: Compile CHANGED scores only
+    - name: Compile CHANGED scores only
         run: |
-          # Get list of added or modified .ly files
-          # We compare the current commit (HEAD) to the previous one (HEAD^)
-          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.ly$' || true)
+          # 1. Check if a parent commit exists
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            echo "Parent commit found. Checking for changes..."
+            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.ly$' || true)
+          else
+            echo "No parent commit found (initial push or shallow clone). Building all files."
+            CHANGED_FILES=$(find . -name "*.ly")
+          fi
 
+          # 2. Compile based on what we found
           if [ -z "$CHANGED_FILES" ]; then
             echo "No .ly files changed. Skipping LilyPond."
           else
-            echo "Compiling: $CHANGED_FILES"
-            # Compile each changed file into the master_folder
-            echo "$CHANGED_FILES" | xargs -I {} lilypond -o master_folder/ "{}"
+            echo "Compiling the following files:"
+            echo "$CHANGED_FILES"
+
+            # Use -n1 to ensure files with spaces or multiple files are handled correctly
+            echo "$CHANGED_FILES" | xargs -n1 -I {} lilypond -o master_folder/ "{}"
           fi
 
       - name: Generate Index Page

@@ -39,7 +39,6 @@ jobs:
           fi
 
           # 2. Add any .ly files that don't have a matching .pdf in master_folder
-          # This catches the 3 files that were never built.
           all_ly_files=$(find . -name "*.ly" -not -path "./master_folder/*")
           for ly_path in $all_ly_files; do
             filename=$(basename "$ly_path" .ly)

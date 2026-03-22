@@ -25,26 +25,39 @@ jobs:
           git fetch origin gh-pages
           git --work-tree=master_folder checkout origin/gh-pages -- . || echo "First run, nothing to fetch"
 
-      - name: Compile CHANGED scores only
+      - name: Compile CHANGED or MISSING scores
         run: |
-          # 1. Check if a parent commit exists
-          if git rev-parse HEAD^ >/dev/null 2>&1; then
-            echo "Parent commit found. Checking for changes..."
-            CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '\.ly$' || true)
+          mkdir -p master_folder
+
+          # 1. Get the list of files changed in this entire push
+          BEFORE_SHA="${{ github.event.before }}"
+          if [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]]; then
+            # If first push, we'll rely on the "missing" logic below
+            FILES_TO_BUILD=""
           else
-            echo "No parent commit found (initial push or shallow clone). Building all files."
-            CHANGED_FILES=$(find . -name "*.ly")
+            FILES_TO_BUILD=$(git diff --name-only $BEFORE_SHA HEAD | grep '\.ly$' || true)
           fi
 
-          # 2. Compile based on what we found
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "No .ly files changed. Skipping LilyPond."
-          else
-            echo "Compiling the following files:"
-            echo "$CHANGED_FILES"
+          # 2. Add any .ly files that don't have a matching .pdf in master_folder
+          # This catches the 3 files that were never built.
+          all_ly_files=$(find . -name "*.ly" -not -path "./master_folder/*")
+          for ly_path in $all_ly_files; do
+            filename=$(basename "$ly_path" .ly)
+            if [ ! -f "master_folder/$filename.pdf" ]; then
+              echo "Found missing PDF for $filename. Adding to build list."
+              FILES_TO_BUILD="$FILES_TO_BUILD $ly_path"
+            fi
+          done
 
-            # Use -n1 to ensure files with spaces or multiple files are handled correctly
-            echo "$CHANGED_FILES" | xargs -n1 -I {} lilypond -o master_folder/ "{}"
+          # 3. Clean up the list (remove duplicates and empty lines)
+          FINAL_LIST=$(echo "$FILES_TO_BUILD" | tr ' ' '\n' | sort -u | sed '/^$/d')
+
+          if [ -z "$FINAL_LIST" ]; then
+            echo "Everything is up to date. No LilyPond files to build."
+          else
+            echo "Files to be processed:"
+            echo "$FINAL_LIST"
+            echo "$FINAL_LIST" | xargs -n1 -I {} lilypond -o master_folder/ "{}"
           fi
 
       - name: Generate Index Page

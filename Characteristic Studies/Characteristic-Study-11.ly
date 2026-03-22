@@ -32,7 +32,7 @@
     \relative c''
     { \time 4/4
       % \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-      \key C \major
+      \key c \major
       \tempo Allegretto
       \partial 4 g8. g16
       a16( g fs g) d'( c b c) e( d cs d) f( e ds e)
@@ -47,7 +47,7 @@
       f16 g e g d g c, g' b, g' a, g' g, g' f, g'
       e, g' g, g' c,, g'' e, g' g,8 c,16 e g c e g \break
       f16 \acciaccatura {fs8} g16 e \acciaccatura {fs8} g16 d \acciaccatura {fs8} g16 c, \acciaccatura {fs8} g16 
-        b, \acciaccatura {fs'8} g16 a, \acciaccatura {fs'8} g16 g, \acciaccatura {fs'8} g16 f?, \acciaccatura {fs'8} g16
+        b, \acciaccatura {fs'8} g16 a, \acciaccatura {fs'8} g16 g, \acciaccatura {fs'8} g16 f,? \acciaccatura {fs'8} g16
       e, \acciaccatura {fs'8} g16 g, \acciaccatura {fs'8} g16 c, \acciaccatura {fs8} g16 e \acciaccatura {fs8} g16 d4 g,8. g16
       
       a( g fs g) d'( c b c) e( d cs d) f( e ds e)
@@ -61,7 +61,7 @@
       
       \key af \major
       c4 c8. c16 c8( ef af, df) |
-      c4. ef8, c'4 af8. af16 |
+      c4. ef,8 c'4 af8. af16 |
       bf4( \appoggiatura { c16 bf a bf } f'8. ef16) ef8( df ef, df') | % replaced turn with appogiatura because turns don't line up
       c4. ef8 af,4 r8 c |
       c4 c8. c16 c8( ef af,) af'-. |

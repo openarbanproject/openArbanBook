@@ -25,7 +25,7 @@ jobs:
           git fetch origin gh-pages
           git --work-tree=master_folder checkout origin/gh-pages -- . || echo "First run, nothing to fetch"
 
-    - name: Compile CHANGED scores only
+      - name: Compile CHANGED scores only
         run: |
           # 1. Check if a parent commit exists
           if git rev-parse HEAD^ >/dev/null 2>&1; then

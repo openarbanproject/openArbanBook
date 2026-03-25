@@ -29,7 +29,7 @@
   \score {
     \layout { \context { \Score \remove "Bar_number_engraver" }}
     %% Characteristic study no. 14 - Ed. 1864 p. 205
-    %%                               Ed. 1893 p. 
+    %%                               Ed. 1893 p. 297
     \relative c'' {
       
       \numericTimeSignature \time 2/4
@@ -106,7 +106,7 @@
       
       e\> ds e f-> e ds e ds e f-> e ds \! | % added accents
       e f e d e d c d c b c b |
-      a_3 gs_2_3 a_3 b_1_3-> a_3 gs_2_3 a gs a b-> a g | % added accents
+      a_3 gs_2_3 a_3 b_1_3-> a_3 gs_2_3 a gs a b-> a g | % added accents. Chose to only show same fingerings as in first part.
       a_3\< gs_2_3 a_3 b-2 c cs d cs d e d e \! |
       f\> e f g-> f e f e f g-> f e \! | % added accents
       
@@ -118,9 +118,10 @@
                         
       ds css ds e ds e f e f fs es fs \! |
       \set Timing.beatStructure = 2,2
-      g) g,( fs g) c-. e-. d g,( fs g) b-. d-. | % Didn't add fs! reminder
-      c g( fs g) c-. e-. d g,( fs g) b-. d-. |
-      c e( ds e) c-. g-. e c'( b c) g-. e-.} |
+      % Added staccatos as in 1893's edition
+      g-.) g,( fs g) c-. e-. d-. g,( fs g) b-. d-. | % Didn't add fs! reminder
+      c-. g( fs g) c-. e-. d-. g,( fs g) b-. d-. |
+      c-. e( ds e) c-. g-. e-. c'( b c) g-. e-.} |
       c4 c'4 |
       c,2 \fine |
       

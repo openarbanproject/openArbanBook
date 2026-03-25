@@ -45,31 +45,31 @@
       c\> b c d-> c b c b c d-> c b \! |
       c\< b c cs bs cs d cs d ds css ds \! |
       
-      e\> ds e f e ds e ds e f e ds \! |
+      e\> ds e f-> e ds e ds e f-> e ds \! | % added accents
       e f e d e d c d c b c b |
-      a_3 gs_2_3 a_3 b_1_3-> a_3 gs_2_3 a gs a b-> a g |
+      a_3 gs_2_3 a_3 b_1_3-> a_3 gs_2_3 a gs a b-> a g | % added accent %TODO move accent up
       a_3\< gs_2_3 a_3 b-2 c cs d cs d e d e \! |
       f\> e f g-> f e f e f g-> f e \! |
       
-      d cs d e-> d cs d cs d e-> d c |
+      d cs d e-> d cs d cs d e-> d c | % added accent
       b as b c-> b as b as b c-> b a |
       g fs g a-> g fs g fs g a-> g fs } |
       g8) \tuplet 3/2 { a16( g fs g fs g a-> g fs |
       g\< fs g gs fss gs a gs a b a b \! |
       
       c\> b c d-> c b c b c d-> c b \! |
-      c\< b c cs bs cs d ds d ds css ds \! |
+      c\< b c cs bs cs d cs d ds css ds \! |
       e\> ds e f-> e ds e ds e f-> e ds \! |
       e f e d e d c d c b c b |
-      a_3 gs_2_3 a_3 b_1_3 a_3 gs_2_3 a g a b-> a g |
+      a_3 gs_2_3 a_3 b_1_3-> a_3 gs_2_3 a gs a b-> a g |
       
       a_3\< gs_2_3 a_3 b-2 c cs d cs d e d e \! |
       f\> e f g-> f e f e f g-> f e \! |
-      d cs d e-> d cs d cs d e d c |
-      b as b c-> b as b as b c-> b a |
+      d cs d e-> d cs d cs d e-> d c | % added accent
+      b as b c-> b as b as b c-> b a | % added accents
       g\< fs g gs fss gs a gs a b a b \! |
       
-      c b c d c b c b c d c b } \! |
+      c\> b c d-> c b c b c d-> c b } \! | % added accents
       c4) r4 |
       \tuplet 3/2 { bf16\>( a bf c-> bf a bf a bf c-> bf a |
       g fs g a-> g fs g fs g a-> g f \! |
@@ -77,15 +77,15 @@
       e4) \> ( e,8 \!) r8 |
       \tuplet 3/2 { c'16(\> b c d c b c b c d c bf \! |
                     
-      a_3 gs_2_3 a_3 bf_1_2_3-> a_3 g_2_3 a_3 gs_2_3 a_3 bf_1_2_3-> a_3 g |
+      a_3 gs_2_3 a_3 bf_1_2_3-> a_3 g_2_3 a_3 gs_2_3 a_3 bf_1_2_3-> a_3 g | % added accents
       f\< fs g gs a bf b c cs d ds e\! } |
       f4) \> ( f,8 \! ) r8 |
-      \tuplet 3/2 { d'16( \> cs d e d cs d cs d e d c |
-      bf a bf c bf a bf a bf c bf a \! |
+      \tuplet 3/2 { d'16( \> cs d e-> d cs d cs d e-> d c | % added accents
+      bf a bf c-> bf a bf a bf c-> bf a \! | % added accents
       g \< gs a bf b c cs d ds e f fs \! } |
       g4) \> ( g,8 \! ) r8 | % Added descrescendo
       
-      \tuplet 3/2 { e'16( \> ds e f e ds e ds e f e d \! |
+      \tuplet 3/2 { e'16( \> ds e f-> e ds e ds e f-> e d \! |
       c \> b c d c b c b c d c bf \! |
       a \< bf b c cs d ds e f fs g gs \! } |
       a4) \> ( a,8 ) \! r8 | % Added descrescendo
@@ -94,9 +94,9 @@
       
       f' \> g f e f e d e d c d c |
       b c b a b a g a g f g f \! | % corrected descrescendo
-      e' f e d e d c d c b c b |
+      e'\> f e d e d c d c b c b |
       a b a g a g f g f e f e \! | % corrected descrescendo
-      d' e d c d c b c b a b a |
+      d'\> e d c d c b c b a b a |
       
       g a g f g f e f e d e d \! } | % corrected descrescendo
       c8) \tuplet 3/2 { a'16( g fs g fs g a-> g fs) |
@@ -114,7 +114,16 @@
       b as b c-> b as b as b c-> b a | % added accents
       g \< fs g  gs fss gs a gs a b a b |
       c b c cs bs cs d cs d ds css d \! } |
-      e8) 
+      e8) \tuplet 3/2 { c16 ( \< b c cs bs cs d cs d |
+                        
+      ds css ds e ds e f e f fs es fs \! |
+      \set Timing.beatStructure = 2,2
+      g) g,( fs g) c-. e-. d g,( fs g) b-. d-. | % Didn't add fs! reminder
+      c g( fs g) c-. e-. d g,( fs g) b-. d-. |
+      c e( ds e) c-. g-. e c'( b c) g-. e-.} |
+      c4 c'4 |
+      c,2 \fine |
+      
     }
   }
 

@@ -21,7 +21,7 @@
   \header {  
             tagline = "This work is licensed under a CC BY-SA 4.0 license."
             composer = " "
-            title = "CHARACTERISTIC STUDY No. 9 - Incomplete"
+            title = "CHARACTERISTIC STUDY No. 9"
             dedication = "openArbanProject"
   }
   
@@ -67,6 +67,21 @@
   g( f) e,( f) d'4~ d8 cs16( d cs d \acciaccatura { f } ef16. d32) |
   d16( c) e,( f) ef'8. d16 d( c) e,( f) bf( a d16. c32) |
   bf2. r8 d |
+
+  d16( c b c) g'( f e f) a( g) f ef d( c) bf a |
+  bf cs,( d) f bf cs,( d) g f8 bf,,16( a bf d) f bf |
+  d16( c b c) g'( f e f) a( g) f ef d( c) bf a |
+  bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
+  f( g) a g f ef d c bf a g f ef d c bf |
+  a8 c16 f a( c,) f a c f( g f) ef c a f | 
+  bf ef( f) d bf cs( d) bf f a( bf) f d e( f) d |
+  bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
+  f( g) a g f ef d c bf a g f ef d c bf |
+  
+  a f'( e f g f e f) f( e) e( ef) ef( d) d( c) |
+  bf f'( e f g f e f) f( e) e( ef) ef( d) d( c) |
+  bf( a bf) d f, fs g a bf( a bf) d f, fs g a |
+  bf4 bf bf, r \bar "|."
 
     }
    }

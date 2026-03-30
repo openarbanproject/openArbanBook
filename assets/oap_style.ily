@@ -1,5 +1,5 @@
 % arban_style.ily
-\version "2.24.0"
+\version "2.22.1"
 
 \paper {
   indent = 0\mm

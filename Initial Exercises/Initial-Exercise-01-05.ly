@@ -1,20 +1,16 @@
-\version "2.24.0"
+\version "2.22.0"
 \language "english"
 
 \include "../assets/oap_style.ily"
 
 \book {
   \score {
-    \header {
-      piece = "EXERCISE 1"
-    }
-  }
-    \relative c'
-    {
+    \header { piece = "EXERCISE 1" }
+    \relative c' {
       \numericTimeSignature \time 4/4
       g'1-> g-> c-> c-> a-> a-> d-> d-> 
       f,-> f-> a-> a-> g-> g-> b-> b-> 
-      g-> g-> c-> \bar "|."
+      g-> g-> c-> \bar "|." 
     }  
   }
   
@@ -22,7 +18,6 @@
     \header {
       piece = "EXERCISE 2"
     }
-  }
   \relative c'
    {
      \numericTimeSignature \time 4/4
@@ -35,7 +30,6 @@
     \header {
       piece = "EXERCISE 3"
     }
-  }
   \relative c'
    {
      \numericTimeSignature \time 4/4
@@ -49,7 +43,6 @@
     \header {
       piece = "EXERCISE 4"
     }    
-  }
   \relative c'
    {
      \numericTimeSignature \time 4/4
@@ -63,7 +56,6 @@
     \header {
       piece = "EXERCISE 5"
     }    
-  }
   \relative c'
    {
      \numericTimeSignature \time 4/4

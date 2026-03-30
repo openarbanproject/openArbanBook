@@ -72,7 +72,7 @@
   d16( c b c) g'( f e f) a( g) f ef d( c) bf a |
   bf cs,( d) f bf cs,( d) g f8 bf,16( a bf d) f bf |
   d16( c b c) g'( f e f) a( g) f ef d( c) bf a |
-  bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
+  bf8 d,16 f bf( d,) f bf d( f,) g a bf c d ef |
   f( g) a g f ef d c bf a g f ef d c bf |
   a8 c16 f a( c,) f a c f( g f) ef c a f | 
   bf ef( f) d bf cs( d) bf f a( bf) f d e( f) d |

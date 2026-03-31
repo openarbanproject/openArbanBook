@@ -3,9 +3,11 @@
 \include "../assets/oap_style.ily"
 \include "../assets/oap_functions.ily"
 
+#(define exercise-counter 0)
+
 \book {
   \score {
-    \header { piece = "EXERCISE 1" }
+  \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
       \time 4/4
       g'1-> g-> c-> c-> a-> a-> d-> d-> 
@@ -15,11 +17,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 2"
-    }
-  \relative c'
-   {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
      \time 4/4
      g'2-> g-> a a b b c1 a2 a b b c c d1
      d2-> d-> c c b b a1 c2 c b b a a g1 \bar "|."
@@ -27,11 +26,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 3"
-    }
-  \relative c'
-   {
+  \new Staff \with { instrumentName = \markup \next-ex }
+  \relative c' {
      \time 4/4
      e2-> f-> e1-> f2 g f1 g2 a g1 a2 b a1 \bar "||"
      f2 g f1 g2 a g1 a2 b a1 b2 c b1 \bar "||"
@@ -40,11 +36,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 4"
-    }    
-  \relative c'
-   {
+  \new Staff \with { instrumentName = \markup \next-ex }
+  \relative c' {
      \time 4/4
      e'2-> f-> e1 d2 e d1 c2 d c1 b2 c b1 \bar "||"
      d2 e d1 c2 d c1 b2 c b1 a2 b a1 \bar "||"
@@ -52,12 +45,9 @@
    }
   }
   
-  \score {
-    \header {
-      piece = "EXERCISE 5"
-    }    
-  \relative c'
-   {
+  \score {    
+  \new Staff \with { instrumentName = \markup \next-ex }
+  \relative c' {
      \time 4/4
      e2-> g-> e1-> f2 a f1 g2 b g1 a2 c a1 b2 d b1 c2 e c1 \bar "||"
      \break

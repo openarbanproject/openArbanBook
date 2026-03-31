@@ -1,7 +1,7 @@
-\version "2.22.0"
-\language "english"
+\version "2.22.1"
 
 \include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
 
 \book {
   \score {

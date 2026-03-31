@@ -1,29 +1,14 @@
-\version "2.24.0"
-\language "english"
-\paper {
-  fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-}
-\header {
-  dedication = "openArbanProject"
-  title = "EXERCISE 9"
-  composer = " "
-  % arranger = "Transcribed by Rich Colquhoun, https://trumpetpla.net/"
-  copyright = "This work is licensed under a CC BY-SA 4.0 license."
-  tagline = ""
-}
-\score {
-  \layout {
-    indent = 0
-  }
-\relative c'
+\version "2.22.1"
 
-  {
-  \numericTimeSignature \time 4/4
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+
+#(define exercise-counter 8)
+
+\score {
+\new Staff \with { instrumentName = \markup \next-ex }  
+  \relative c' {
+  \time 4/4
   \partial 2
   \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
   \set Staff.printKeyCancellation = ##f

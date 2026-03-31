@@ -1,33 +1,13 @@
-\version "2.24.0"
-\language "english"
+\version "2.22.1"
+
+#(define exercise-counter 5)
 
 \book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+
+% title not necessary
   
   \score {
-    \header {
-      piece = "EXERCISE 6"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
+    \new Staff \with { instrumentName = \markup \next-ex }
     \relative c'
     {
       \numericTimeSignature \time 4/4
@@ -43,12 +23,9 @@
   
   
   \score {
-    \header {
-      piece = "EXERCISE 7"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { \numericTimeSignature \time 4/4
+    \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c'{ 
+      \time 4/4
       g'1-> c g e' c g' e c \bar "||"
       fs,-> b fs ds' b fs' ds b \bar "||" \break
       f-> bf f d' bf f' d bf \bar "||" 
@@ -61,12 +38,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 8"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { \numericTimeSignature \time 4/4
+    \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' { 
+      \time 4/4
       g'2-> g-> c c g g e e g g c1
       \bar "||"
       fs,2-> fs-> b b fs fs ds ds fs fs b1

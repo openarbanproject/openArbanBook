@@ -6,6 +6,9 @@
 #(define exercise-counter 0)
 
 \book {
+
+  \header { title = "Initial Exercises" }
+
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {

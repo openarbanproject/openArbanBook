@@ -1,4 +1,5 @@
-% arban_style.ily
+% Style sheet for openArbanProject
+
 \version "2.22.1"
 \language "english"
 

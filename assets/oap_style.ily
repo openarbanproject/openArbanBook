@@ -1,5 +1,6 @@
 % arban_style.ily
 \version "2.22.1"
+\language "english"
 
 \paper {
   indent = 0\mm

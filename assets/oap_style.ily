@@ -31,6 +31,8 @@
   indent = 0
   \context {
     \Score
+    \override StaffSymbol.thickness = #1.3
+    \override Stem.thickness = #1.5
     \remove "Bar_number_engraver"
     \numericTimeSignature
   }

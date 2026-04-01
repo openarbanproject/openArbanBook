@@ -5,14 +5,10 @@
 
 #(define exercise-counter 38)
   
-    \score {
-    \header {
-      piece = "EXERCISE 39"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { 
-      \numericTimeSignature \time 3/4
+  \score {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' { 
+      \time 3/4
       \key d \major
       d8-. e-. fs-. g-. a-. fs-. d4 a' fs e8-. fs-. g-. a-. b-. g-. e4 b' g
       fs8-"sim." g a b cs a fs4 cs' a g8 a b cs d b g4 d' b
@@ -27,13 +23,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 40"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { 
-      \numericTimeSignature \time 3/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' { 
+      \time 3/4
       \key bf \major
       bf8-. c-. d-. ef-. f-. d-. bf4 f' d c8-. d-. ef-. f-. g-. ef-. c4 g' ef
       d8-"sim." ef f g a f d4 a' f ef8 f g a bf g ef4 bf' g

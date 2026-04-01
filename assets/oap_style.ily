@@ -12,12 +12,13 @@
       \fromproperty #'header:composer
     }
   }
-  fonts = #(make-pango-font-tree
-            "Lato"
-            "Lato"
-            "Liberation Mono"
-            (/ (* staff-height pt) 2.5))
-}
+  #(define fonts
+    (set-global-fonts
+     #:music "haydn"        % This sets the notes and symbols to Haydn
+     #:brace "haydn"        % This sets the piano/staff braces to Haydn
+     #:roman "Libre Baskerville" % Matches your website's serif font
+    ))
+  }
 
 \header { 
   tagline = ##f 

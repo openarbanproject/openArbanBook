@@ -3,7 +3,7 @@
 \include "../assets/oap_style.ily"
 \include "../assets/oap_functions.ily"
 
-#(define exercise-counter 0)
+#(define exercise-counter 33)
  
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }

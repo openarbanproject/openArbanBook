@@ -24,7 +24,14 @@ jobs:
           wget -q https://github.com/OpenLilyPondFonts/haydn/archive/refs/heads/master.zip -O haydn.zip
           unzip -j haydn.zip "*.otf" -d ~/.local/share/fonts/haydn
           fc-cache -f -v
-          rm haydn.zip
+
+      - name: Install Libre Baskerville Font
+        run: |
+          mkdir -p ~/.local/share/fonts/baskerville
+          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Regular.ttf -P ~/.local/share/fonts/baskerville
+          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Italic.ttf -P ~/.local/share/fonts/baskerville
+          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Bold.ttf -P ~/.local/share/fonts/baskerville
+          fc-cache -f -v
 
       - name: Prepare Master Folder
         run: |

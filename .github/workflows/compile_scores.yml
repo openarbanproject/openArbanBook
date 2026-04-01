@@ -28,9 +28,8 @@ jobs:
       - name: Install Libre Baskerville Font
         run: |
           mkdir -p ~/.local/share/fonts/baskerville
-          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Regular.ttf -P ~/.local/share/fonts/baskerville
-          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Italic.ttf -P ~/.local/share/fonts/baskerville
-          wget -q https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Bold.ttf -P ~/.local/share/fonts/baskerville
+          wget -q "https://fonts.google.com/download?family=Libre%20Baskerville" -O baskerville.zip
+          unzip -j baskerville.zip "*.ttf" -d ~/.local/share/fonts/baskerville
           fc-cache -f -v
 
       - name: Prepare Master Folder

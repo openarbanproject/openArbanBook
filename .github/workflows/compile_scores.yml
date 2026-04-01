@@ -21,15 +21,15 @@ jobs:
         run: |
           mkdir -p ~/.local/share/fonts/haydn
           # Download the Haydn music and bracing fonts
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-11.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-13.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-14.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-16.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-18.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-20.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-23.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-26.otf -P ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/raw/master/otf/Haydn-Brace.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-11.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-13.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-14.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-16.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-18.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-20.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-23.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-26.otf -P ~/.local/share/fonts/haydn
+          wget -q https://github.com/OpenLilyPondFonts/haydn/blob/9e7de8b0a722e650960abaae21c489e554ac02e0/otf/Haydn-Brace.otf -P ~/.local/share/fonts/haydn
           
           # Refresh the font cache
           fc-cache -f -v

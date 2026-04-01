@@ -1,36 +1,14 @@
 \version "2.24.0"
-\language "english"
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
-  
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+
+#(define exercise-counter 0)
+ 
   \score {
-    \header {
-      piece = "EXERCISE 34"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 4/4
       \key d \major
       d4 e8-. fs-. g-. a-. b-. cs-. d2 d, e4 fs8-. g-. a-. b-. cs-. d-. e2 e,
       fs4-"sim." g8 a b cs d e fs2 fs, g4 a8 b cs d e fs g2 g,
@@ -42,13 +20,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 35"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 4/4
       \key bf \major
       bf4 c8-. d-. ef-. f-. g-. a-. bf2 bf, c4 d8-. ef-. f-. g-.a-. bf-. c2 c,
       d4-"sim." ef8 f g a bf c d2 d, ef4 f8 g a bf c d ef2 ef,
@@ -60,13 +34,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 36"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 3/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 3/4
       \key f \major
       f8-. g-. a-. bf-. c-. a-. f4 c' a g8-. a-. bf-. c-. d-. bf-. g4 d' bf 
       a8-"sim." bf c d e c a4 e' c bf8 c d e f d bf4 f' d

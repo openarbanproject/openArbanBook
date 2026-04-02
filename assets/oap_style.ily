@@ -4,7 +4,6 @@
 \language "english"
 
 \paper {
-  indent = 0\mm
   scoreTitleMarkup = \markup {
     \fill-line {
       \null
@@ -19,6 +18,11 @@
      #:roman "Libre Baskerville"
      #:sans "sans-serif"
      #:typewriter "monospace" ))
+
+	 indent = 0\mm
+     top-margin = 15\mm
+     bottom-margin = 15\mm
+     line-width = 176\mm
   }
 
 \header { 
@@ -28,11 +32,10 @@
 }
 
 \layout {
-  indent = 0
   \context {
     \Score
-    \override StaffSymbol.thickness = #1.3
-    \override Stem.thickness = #1.5
+    \override StaffSymbol.thickness = #1.2
+    \override Stem.thickness = #1.4
     \remove "Bar_number_engraver"
     \numericTimeSignature
   }

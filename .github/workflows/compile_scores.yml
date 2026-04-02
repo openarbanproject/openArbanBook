@@ -21,8 +21,6 @@ jobs:
       - name: Install Project Fonts
         run: |
           # Make and define the internal LilyPond font paths
-          sudo mkdir $LILYPOND_DATADIR/fonts/otf
-          sudo mkfir $LILYPOND_DATADIR/fonts/svg
           LP_OTF="$LILYPOND_DATADIR/fonts/otf"
           LP_SVG="$LILYPOND_DATADIR/fonts/svg"
 

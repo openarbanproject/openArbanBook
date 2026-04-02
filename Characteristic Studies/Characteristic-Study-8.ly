@@ -1,5 +1,4 @@
 \version "2.24.0"
-
 \include "../assets/oap_style.ily"
 \include "../assets/oap_functions.ily"
 

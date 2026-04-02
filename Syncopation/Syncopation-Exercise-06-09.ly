@@ -18,7 +18,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c'' {
-      \numericTimeSignature \time 4/4
+      \time 4/4
       \key g \major
        g8-. g4-^ g-^ g-^ b8-. a-. a4-^ a-^ a-^ c8-. 
        b-. b4-^ b-^ b-^ d8-. c-. c4-^ c-^ c-^ e8-.
@@ -31,7 +31,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
-      \numericTimeSignature \time 2/4
+      \time 2/4
       \partial 8
       \key g \major
       d8-. 
@@ -48,7 +48,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
-      \numericTimeSignature \time 4/4
+      \time 4/4
       \partial 4.
       e-. f-. fs-.
       g-. e'4-> d-> c8-. b-. a-.  g-. d4-> e-> f8-. fs-. a-.

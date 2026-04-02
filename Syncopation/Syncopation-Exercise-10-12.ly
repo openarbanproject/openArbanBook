@@ -6,7 +6,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
-      \numericTimeSignature \time 2/4
+      \time 2/4
       c16-.\mark "Allegro" c8-^ d16-. e-. e8-^ f16-. g-. g8-^ e16-. c-. c8-^ d16-.
       e16-"sim." e8 f16 g g8 a16 b b8 c16 d4
       f16 f8 e16 d d8 c16 b b8 a16 g g8 f16 e e8 d16 c c8 d16 e e8 f16 g4
@@ -22,7 +22,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
-      \numericTimeSignature \time 4/4
+      \time 4/4
       g'8-. e'4-^ c-^ g8-. e-. c-. b-. d4-^ f-^ g8-. b-. d-. 
       f-. d4-^ b-^ g8-. fs-. f-. e-. f4-^ fs8-. g-. r r4
       g8-"sim." e'4 c8 a f'4 d8 b g'4 e8 c4 r 
@@ -37,7 +37,7 @@
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }
     \relative c' {
-      \numericTimeSignature \time 4/4
+      \time 4/4
       c'8 b4-^ c8 e d4-^ b8 g2~ g8 a b c d cs4-^ d8 f e4-^ ds8 e2~ e4 r8 g
       g fs4 f8 e4~ e8 e e ds4 d8 c4~ c8 e a, d4 f8 e d4 c8 d2~ d4 r8 g,
       c bf4 a8 bf4~ bf8 g d' c4 b8 c4~ c8 a' a g4 f e d8 c b4 a8 gs b e,4

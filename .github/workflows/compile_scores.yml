@@ -18,20 +18,18 @@ jobs:
         with:
           lilypond-version: 2.24
 
-      - name: Install Haydn Font
+      - name: Install Project Fonts
         run: |
-          mkdir -p ~/.local/share/fonts/haydn
-          wget -q https://github.com/OpenLilyPondFonts/haydn/archive/refs/heads/master.zip -O haydn.zip
-          unzip -j haydn.zip "*.otf" -d ~/.local/share/fonts/haydn
-          fc-cache -f -v
-
-      - name: Install Libre Baskerville Font
-        run: |
-          mkdir -p ~/.local/share/fonts/baskerville
-          curl -fLo ~/.local/share/fonts/baskerville/LibreBaskerville-Regular.ttf https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Regular.ttf
-          curl -fLo ~/.local/share/fonts/baskerville/LibreBaskerville-Bold.ttf https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Bold.ttf
-          curl -fLo ~/.local/share/fonts/baskerville/LibreBaskerville-Italic.ttf https://github.com/google/fonts/raw/main/ofl/librebaskerville/LibreBaskerville-Italic.ttf
-          fc-cache -f -v
+          # Install Haydn (Music Fonts)
+          sudo mkdir -p /usr/share/lilypond/2.24/fonts/otf
+          sudo mkdir -p /usr/share/lilypond/2.24/fonts/svg      
+          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/fonts/otf/
+          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/fonts/svg/
+          
+          # Install Libre Baskerville (Text Fonts)
+          sudo mkdir -p /usr/local/share/fonts/librebaskerville
+          sudo cp assets/fonts/LibreBaskerville/*.ttf /usr/local/share/fonts/librebaskerville/
+          sudo fc-cache -f -v
 
       - name: Prepare Master Folder
         run: |

@@ -8,6 +8,7 @@
 \book {
 
   \header { title = "Initial Exercises" }
+  \markup \vspace #1
 
   \score {
   \new Staff \with { instrumentName = \markup \next-ex }

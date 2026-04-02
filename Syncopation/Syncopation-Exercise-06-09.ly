@@ -1,35 +1,11 @@
-\version "2.24.0"
-\language "english"
-
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+#(define exercise-counter 5)
   
   \score {
-    \header {
-      piece = "EXERCISE 6"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c''
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c'' {
       \numericTimeSignature \time 2/4
       \key g \major
        g8-. g4-^ b8-. a-. a4-^ c8-. b-. b4-^ d8-. c-. c4-^ e8-. 
@@ -40,12 +16,8 @@
   }
 
   \score {
-    \header {
-      piece = "EXERCISE 7"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c''
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c'' {
       \numericTimeSignature \time 4/4
       \key g \major
        g8-. g4-^ g-^ g-^ b8-. a-. a4-^ a-^ a-^ c8-. 
@@ -57,12 +29,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 8"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \partial 8
       \key g \major
@@ -78,12 +46,8 @@
   
   
   \score {
-    \header {
-      piece = "EXERCISE 9"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 4/4
       \partial 4.
       e-. f-. fs-.
@@ -98,4 +62,3 @@
       g e'4 d c8 b c a f'4 e d8 c a g e'4 c a8 g fs f d4 b8 c \bar "|."
     }   
   }
-}

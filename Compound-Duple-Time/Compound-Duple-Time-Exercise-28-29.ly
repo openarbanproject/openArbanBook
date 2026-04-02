@@ -1,36 +1,15 @@
-\version "2.24.0"
-\language "english"
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+#(define exercise-counter 27)
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+\header { title = "Compound Duple Time" }
+\markup \vspace #1
    
   \score {
-    \header {
-      piece = "EXERCISE 28"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 6/8
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 6/8
       \key f \major
       \tempo "Allegretto"
       f8-. f-. f-. f-. r r f-. a-. f-. c-. r r g'-. g-. g-. g-. r r e-. g-. bf-. d-. r c-.
@@ -45,13 +24,9 @@
   }
 
   \score {
-    \header {
-      piece = "EXERCISE 29"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 6/8
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 6/8
       \key c \major
       \tempo "Allegro"
       r8 g'-. c-. e-. d-. c-. b-. d-. g-. f-. e-. d-. 
@@ -66,4 +41,4 @@
       r d e f g gs a b c d e f e g, g b g' f e g, d' c r r \bar "|."
     }
   }
-}
+

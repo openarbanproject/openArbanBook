@@ -23,8 +23,8 @@ jobs:
           # Install Haydn (Music Fonts)
           sudo mkdir -p /usr/share/lilypond/2.24/fonts/otf
           sudo mkdir -p /usr/share/lilypond/2.24/fonts/svg      
-          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/fonts/otf/
-          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/fonts/svg/
+          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/2.24/fonts/otf/
+          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/2.24/fonts/svg/
           
           # Install Libre Baskerville (Text Fonts)
           sudo mkdir -p /usr/local/share/fonts/librebaskerville

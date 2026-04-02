@@ -20,16 +20,23 @@ jobs:
 
       - name: Install Project Fonts
         run: |
-          # Install Haydn (Music Fonts)
-          sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/otf
-          sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/svg
-          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/2.24.4/fonts/otf/
-          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/2.24.4/fonts/svg/
-          
-          # Install Libre Baskerville (Text Fonts)
+          # Make and define the internal LilyPond font paths
+          sudo mkdir $LILYPOND_DATADIR/fonts/otf
+          sudo mkfir $LILYPOND_DATADIR/fonts/svg
+          LP_OTF="$LILYPOND_DATADIR/fonts/otf"
+          LP_SVG="$LILYPOND_DATADIR/fonts/svg"
+
+          # Copy Haydn (Music Fonts)
+          sudo cp assets/fonts/haydn/otf/*.otf "$LP_OTF/"
+          sudo cp assets/fonts/haydn/svg/*.svg "$LP_SVG/"
+
+          # Install Libre Baskerville (Text Font) to the System path
           sudo mkdir -p /usr/local/share/fonts/librebaskerville
           sudo cp assets/fonts/LibreBaskerville/*.ttf /usr/local/share/fonts/librebaskerville/
           sudo fc-cache -f -v
+
+          # Debug check: See if the files actually arrived
+          ls "$LP_OTF" | grep -i haydn
 
       - name: Prepare Master Folder
         run: |

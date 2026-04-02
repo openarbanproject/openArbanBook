@@ -3,8 +3,6 @@
 \include "../assets/oap_functions.ily"
 #(define exercise-counter 0)
 
-\book {
-
   \header { title = "Initial Exercises" }
   \markup \vspace #1
 

@@ -2,10 +2,6 @@
 \include "../assets/oap_style.ily"
 \include "../assets/oap_functions.ily"
 #(define exercise-counter 5)
-
-\book {
-
-% title not necessary
   
   \score {
     \new Staff \with { instrumentName = \markup \next-ex }
@@ -63,4 +59,3 @@
       \bar "|." 
     }
   }
-}

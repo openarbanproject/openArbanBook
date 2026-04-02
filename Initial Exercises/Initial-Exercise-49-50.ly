@@ -1,4 +1,4 @@
-\version "2.24."
+\version "2.24.4"
 \include "../assets/oap_style.ily"
 \include "../assets/oap_functions.ily"
 #(define exercise-counter 48)

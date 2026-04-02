@@ -13,8 +13,8 @@
   }
   #(define fonts
     (set-global-fonts
-     #:music "haydn"        
-     #:brace "haydn"        
+     #:music "haydn"
+     #:brace "haydn"
      #:roman "Libre Baskerville"
      #:sans "sans-serif"
      #:typewriter "monospace" ))
@@ -26,8 +26,8 @@
   }
 
 \header { 
-  tagline = ##f 
-  copyright = "This work is licensed under a CC BY-SA 4.0 license."
+  % tagline = ##f
+  tagline = "This work is licensed under a CC BY-SA 4.0 license."
   dedication = "openArbanProject"
 }
 

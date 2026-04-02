@@ -1,36 +1,14 @@
 \version "2.24.0"
-\language "english"
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+
+#(define exercise-counter 19)
   
   \score {
-    \header {
-      piece = "EXERCISE 20"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 4/4
+    \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 4/4
       \key f \major
       f a g bf a c bf d c e d f e g f a 
       g a f g e f d e c d bf c a bf g a
@@ -43,13 +21,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 21"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { 
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' { 
+      \time 4/4
       \key c \major
       c4 e d f e g f a g b a c b d c e
       d f e g f g e f d e c d b c a b 
@@ -62,13 +36,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 22"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 4/4
       \key g \major
       g' b a c b d c e d fs e g fs g e fs 
       d e c d b c a b g a fs g e fs d r
@@ -81,13 +51,9 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 23"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
+      \time 4/4
       \key f \major
       f4 d e f g e f g a f g a bf g a bf 
       c a bf c d bf c d e c d e f1

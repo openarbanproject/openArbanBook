@@ -1,34 +1,13 @@
 \version "2.24.0"
-\language "english"
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  
-  \header {  
-            tagline = "This work is licensed under a CC BY-SA 4.0 license."
-            composer = " "
-            title = "CHARACTERISTIC STUDY No. 8"
-            dedication = "openArbanProject"
-  }
-  
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+
+  \header { title = "CHARACTERISTIC STUDY No. 8" }
+  \markup \vspace #1
+
   \score {
-   %% Characteristic study no. 8 - Ed. 1864 p. 200
-   \layout { \context { \Score \remove "Bar_number_engraver" }}
+  %% Characteristic study no. 8 - Ed. 1864 p. 200
     \relative c'
     { \time 4/4
       \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
@@ -108,8 +87,7 @@
       d) d( f) f( e) e( a) a( d,8) a16 a( d) d( f) f( |
       e) e( a,) a( cs) cs( e) e( d) d( a) a( d) d( f) f( |
       e) e( a,) a( cs) cs( e) e( d) d( cs) cs( d) d( cs) cs( |
-      d) d( cs) cs( d) d( cs) cs( d4 f8. f16 |
+      d) d( cs) cs( d) d( cs) cs( d4) f8. f16 |
       d,1 \fermata \bar "|."
     }
   }
-}

@@ -1,36 +1,15 @@
-\version "2.24.0"
-\language "english"
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+#(define exercise-counter 0)
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
-  
+\header { title = "Syncopation" }
+\markup \vspace #1
+
   \score {
-    \header {
-      piece = "EXERCISE 1"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c''
-    {
-      \numericTimeSignature \time 4/4
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c'' {
+      \time 4/4
       \key c \major
       g4-. g2-^ gs4-. a-. a2-^ c4-. b-. b2-^ d4-. d-. g,2-^ r4
       e'-. e2-^ c4-. b-. e2-^ g,4-. fs-. d'2-^ fs,4-. a-. g2-^ r4
@@ -45,12 +24,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 2"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 4/4
       \key f \major
        f4-. a2-^ f4-. g-. bf2-^ g4-. a-. c2-^ a4-. bf-. d2-^ bf4-.
@@ -62,12 +37,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 3"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \key f \major
        f8-. a4-^ f8-. g-. bf4-^ g8-. a-. c4-^ a8-. bf-. d4-^ bf8-.
@@ -79,12 +50,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 4"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 3/4
       \key f \major
        f8-. a4-^ g-^ f8-. g-. bf4-^ a-^ g8-. a-. c4-^ bf-^ a8-. bf-. d4-^ c-^ bf8-.
@@ -96,12 +63,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 5"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 3/4
       \key c \major
        c8-. e4-^ d-^ c8-. d-. f4-^ e-^ d8-. e-. g4-^ f-^ e8-. f-. a4-^ g-^ f8-.
@@ -111,4 +74,3 @@
       \bar "|."
     }
   }
-}

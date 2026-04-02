@@ -1,35 +1,14 @@
-\version "2.24.0"
-\language "english"
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+#(define exercise-counter 18)
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+\header { title = "Fanfare Rhythms" }
+\markup \vspace #1
   
   \score {
-    \header {
-      piece = "EXERCISE 19"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \key c \major
       c'8-. c16-. c-. c8-. g-. e'-. e16-. e-. e8-. c-. g'8-. g16-. g-. g8-. e-. c4 r
@@ -44,12 +23,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 20"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+   \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \key c \major
       c'8-. c16-. c-. c8-. e16-. c-. g8-. g16-. g-. g8-. c16-. d-. e8-. e16-. e-. e8-. g16-. e-. c4-. r
@@ -63,12 +38,8 @@
   }
   
   \score {
-    \header {
-      piece = "EXERCISE 21"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \key f \major
       c'16->-. c-. c8-. a-. c-. f16->-. f-. f8-. e-. d-. 
@@ -83,4 +54,3 @@
       \bar "|."
     }
   }
-}

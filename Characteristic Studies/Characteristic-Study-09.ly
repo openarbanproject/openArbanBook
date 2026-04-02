@@ -1,35 +1,13 @@
-\version "2.24"
-\language "english"
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header {  
-            tagline = "This work is licensed under a CC BY-SA 4.0 license."
-            composer = " "
-            title = "CHARACTERISTIC STUDY No. 9"
-            dedication = "openArbanProject"
-  }
-  
+\header { title = "CHARACTERISTIC STUDY No. 9" }
+\markup \vspace #1
+
   \score {
 % Transcribed from 1864 Edition, Page 201
-   \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    { \tempo Allegro
+    \relative c' { \tempo Allegro
   \time 4/4 
   \key bf \major
   bf8 d16 f bf( d,) f bf d( f,) g a bf c d ef |
@@ -86,4 +64,3 @@
 
     }
    }
-  }

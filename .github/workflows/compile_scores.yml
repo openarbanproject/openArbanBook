@@ -21,10 +21,10 @@ jobs:
       - name: Install Project Fonts
         run: |
           # Install Haydn (Music Fonts)
-          sudo mkdir -p /usr/share/lilypond/2.24/fonts/otf
-          sudo mkdir -p /usr/share/lilypond/2.24/fonts/svg      
-          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/2.24/fonts/otf/
-          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/2.24/fonts/svg/
+          # sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/otf
+          # sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/svg
+          sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/2.24.4/fonts/otf/
+          sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/2.24.4/fonts/svg/
           
           # Install Libre Baskerville (Text Fonts)
           sudo mkdir -p /usr/local/share/fonts/librebaskerville
@@ -44,14 +44,14 @@ jobs:
           # Create a temporary file to store our list of files to build
           touch to_build.txt
 
-          # 1. Get files changed in this push (handling spaces)
+          # Get files changed in this push (handling spaces)
           BEFORE_SHA="${{ github.event.before }}"
           if [[ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]]; then
             # Using -z for null-terminated output from git
             git diff -z --name-only $BEFORE_SHA HEAD | grep -z '\.ly$' | tr '\0' '\n' >> to_build.txt || true
           fi
 
-          # 2. Add any .ly files that don't have a matching .pdf in master_folder
+          # Add any .ly files that don't have a matching .pdf in master_folder
           # -print0 handles spaces perfectly
           find . -name "*.ly" -not -path "./master_folder/*" -print0 | while IFS= read -r -d '' ly_path; do
             filename=$(basename "$ly_path" .ly)
@@ -61,7 +61,7 @@ jobs:
             fi
           done
 
-          # 3. Process the unique list
+          # Process the build list
           sort -u to_build.txt -o to_build.txt
 
           if [ ! -s to_build.txt ]; then

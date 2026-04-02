@@ -1,35 +1,11 @@
-\version "2.24.0"
-\language "english"
-
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  \header { tagline = ##f 
-            copyright = "This work is licensed under a CC BY-SA 4.0 license."
-            dedication = "openArbanProject"
-  }
+\version "2.24.4"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
+#(define exercise-counter 16)
   
   \score {
-    \header {
-      piece = "EXERCISE 17"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+  \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 3/4
       \tempo "Tempo di Marcia"
       c'8. g16 fs8. g16 a8. b16 c8. d16 c8. d16 e8. f16 
@@ -49,12 +25,8 @@
   }
   
    \score {
-    \header {
-      piece = "EXERCISE 18"
-    }
-    \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c'
-    {
+   \new Staff \with { instrumentName = \markup \next-ex }
+    \relative c' {
       \numericTimeSignature \time 2/4
       \tempo "Allegro Moderato"
       e'16. d32 c16. b32 a16. gs32 a16. b32 c16. b32 c16. d32 e16. f32 e8
@@ -77,4 +49,3 @@
       \bar "|."
     }
   }
-}

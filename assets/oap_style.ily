@@ -1,6 +1,6 @@
 % Style sheet for openArbanProject
 
-\version "2.22.1"
+\version "2.24.0"
 \language "english"
 
 \paper {
@@ -26,7 +26,6 @@
   }
 
 \header { 
-  % tagline = ##f
   tagline = "This work is licensed under a CC BY-SA 4.0 license."
   dedication = "openArbanProject"
 }

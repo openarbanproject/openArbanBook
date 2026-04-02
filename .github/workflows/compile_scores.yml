@@ -21,8 +21,8 @@ jobs:
       - name: Install Project Fonts
         run: |
           # Install Haydn (Music Fonts)
-          # sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/otf
-          # sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/svg
+          sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/otf
+          sudo mkdir -p /usr/share/lilypond/2.24.4/fonts/svg
           sudo cp assets/fonts/haydn/otf/*.otf /usr/share/lilypond/2.24.4/fonts/otf/
           sudo cp assets/fonts/haydn/svg/*.svg /usr/share/lilypond/2.24.4/fonts/svg/
           

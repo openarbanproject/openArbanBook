@@ -54,4 +54,3 @@
      c2 e c1 b2 d b1 a2 c a1 g2 b g1 f2 a f1 e2 g e1 \bar "|."
    }
   }
-}

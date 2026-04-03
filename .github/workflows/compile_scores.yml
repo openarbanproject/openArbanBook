@@ -108,7 +108,7 @@ jobs:
           </head>
           <body>
             <div class="header-box">
-              <img src="https://raw.githubusercontent.com/openarbanproject/collaboratorsPack/master/Cornet_1886.png" class="cornet-illustration" class="cornet-illustration">
+              <img src="assets/Cornet_1886.png" class="cornet-illustration" class="cornet-illustration">
               <h1>🎼 Grand Method For Cornet 🎺</h1>
               <span class="subtitle">as it is, from the Open Arban Project</span>
             </div>

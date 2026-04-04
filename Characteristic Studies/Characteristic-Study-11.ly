@@ -1,36 +1,15 @@
 \version "2.24.0"
-\language "english"
+\version "2.24.0"
+\include "../assets/oap_style.ily"
+\include "../assets/oap_functions.ily"
 
-\book {
-  \paper {
-    indent = 0\mm
-    scoreTitleMarkup = \markup {
-      \fill-line {
-        \null
-        \fontsize #4 \bold \fromproperty #'header:piece
-        \fromproperty #'header:composer
-      }
-    }
-    fonts = #
-  (make-pango-font-tree
-   "Lato"
-   "Lato"
-   "Liberation Mono"
-   (/ (* staff-height pt) 2.5))
-  }
-  
-  \header {  
-            tagline = "This work is licensed under a CC BY-SA 4.0 license."
-            composer = " "
-            title = "CHARACTERISTIC STUDY No. 11 - incomplete"
-            dedication = "openArbanProject"
-  }
+  \header { title = "CHARACTERISTIC STUDY No. 11" }
+  \markup \vspace #1
   
   \score {
-   %% Characteristic study no. 8 - Ed. 1864 p. 203
-   \layout { \context { \Score \remove "Bar_number_engraver" }}
-    \relative c''
-    { \time 4/4
+   %% Characteristic study no. 11 - Ed. 1864 
+    \relative c'' { 
+      \time 4/4
       % \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
       \key c \major
       \tempo Allegretto
@@ -80,8 +59,7 @@
       \key bf \minor
       f4 f8. f16 f8( gf16 f) ef8 df |
       af4-.( f af4) df8 ef |
-      
-      
+            
       \bar "|."
     }
   }

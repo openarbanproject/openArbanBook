@@ -23,7 +23,7 @@
      top-margin = 15\mm
      bottom-margin = 15\mm
      line-width = 176\mm
-
+% this may need to be removed after refactor:
    ragged-bottom = ##t
   }
 

@@ -23,6 +23,8 @@
      top-margin = 15\mm
      bottom-margin = 15\mm
      line-width = 176\mm
+
+   ragged-bottom = ##t
   }
 
 \header { 

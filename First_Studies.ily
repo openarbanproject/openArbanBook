@@ -40,20 +40,12 @@
   \new Staff \with { instrumentName = "8." }
   \"first study 8" }
 
-%"first study 9 score" = \score {
-%  \header { piece = \markup { \Study " 9" } }
-%  \new Staff \with { instrumentName = "9." }
-%  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-%  \set Staff.printKeyCancellation = ##f
-%  \"first study 9p1"
-%  \override Staff.KeyCancellation.break-visibility = #all-invisible
-%  \"first study 9p2"
-%  \set Staff.printKeyCancellation = ##f
-%  \"first study 9p3" }
+"first study 9 score" = \score {
+  \header { piece = \markup { \Study " 9" } }
+  \new Staff \with { instrumentName = "9." }
+  \"first study 9" }
 
-%"first study 10 score" = \score {
-%  \header { piece = \markup { \Study " 10"} }
-%  \new Staff \with { instrumentName = "10." }
-%  \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
-%  \set Staff.printKeyCancellation = ##f
-%  \"first study 10" }
+"first study 10 score" = \score {
+  \header { piece = \markup { \Study " 10"} }
+  \new Staff \with { instrumentName = "10." }
+  \"first study 10" }

@@ -70,8 +70,10 @@
       g2-> g-> c c g g e' e g, g c1  
       \bar "|." }
 
-"first study 9p1" = \relative c' {
+"first study 9" = \relative c' {
     \time 4/4 \partial 2
+    \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+    \set Staff.printKeyCancellation = ##f
 
     \key f \major
     c2 d c e c f c g'
@@ -106,15 +108,14 @@
     \key b \major
     fs2 gs fs as fs b fs cs'
     fs, ds' fs, cs' fs, b1 ~ b4 r
-    \bar "||" \break }
+    \bar "||" \break
 
-"first study 9p2" = \relative c' {
+    \override Staff.KeyCancellation.break-visibility = #all-invisible
     \key c \major
     g2 a g b g c g d'
     g, e' g, d' g, c1 ~ c4 r
-    \bar "||" \break }
-    
-"first study 9p3" = \relative c' {
+    \bar "||" \break
+
     \key df \major
     af2 bf af c af df af ef'
     af, f' af, ef' af, df1 ~ df4 r
@@ -137,6 +138,8 @@
 
 "first study 10" = \relative c' {
      \time 4/4 \partial 2
+     \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+     \set Staff.printKeyCancellation = ##f
 
      \key c \major 
      g'2 fs g f g e g d 

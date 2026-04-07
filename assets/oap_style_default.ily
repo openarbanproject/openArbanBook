@@ -13,10 +13,14 @@
      #:sans "sans-serif"
      #:typewriter "monospace" ))
 
-	 indent = 0\mm
-     top-margin = 15\mm
-     bottom-margin = 15\mm
-     line-width = 176\mm
+  indent = 0\mm
+  top-margin = 15\mm
+  bottom-margin = 15\mm
+  line-width = 176\mm
+
+  scoreTitleMarkup = ""
+
+  ragged-bottom = ##t
   }
 
 \layout {

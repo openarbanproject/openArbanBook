@@ -78,7 +78,7 @@
     \key f \major
     c2 d c e c f c g'
     c, a' c, g' c, f1 ~ f4 r
-    \bar "||" \break
+    \bar "||"
   
     \key gf \major
     df2 ef df f df gf df af'
@@ -88,7 +88,7 @@
     \key g \major
     d2 e d fs d g d a'
     d, b' d, a' d, g1 ~ g4 r
-    \bar "||" \break
+    \bar "||"
   
     \key af \major
     ef2 f ef g ef af ef bf'
@@ -98,7 +98,7 @@
     \key a \major
     e2 fs e gs e a e b'
     e, cs' e, b' e, a1 ~ a4 r
-    \bar "||" \break
+    \bar "||"
   
     \key bf \major
     f2 g f a f bf f c'
@@ -108,7 +108,7 @@
     \key b \major
     fs2 gs fs as fs b fs cs'
     fs, ds' fs, cs' fs, b1 ~ b4 r
-    \bar "||" \break
+    \bar "||"
 
     \override Staff.KeyCancellation.break-visibility = #all-invisible
     \key c \major
@@ -119,7 +119,7 @@
     \key df \major
     af2 bf af c af df af ef'
     af, f' af, ef' af, df1 ~ df4 r
-    \bar "||" \break
+    \bar "||"
   
     \key d \major
     a2 b a cs a d a e'
@@ -129,7 +129,7 @@
     \key ef \major
     bf2 c bf d bf ef bf f'
     bf, g' bf, f' bf, ef1 ~ ef4 r
-    \bar "||" \break
+    \bar "||"
   
     \key e \major
     b2 cs b ds b e b fs'
@@ -144,17 +144,17 @@
      \key c \major 
      g'2 fs g f g e g d 
      g c, g' b, g' c,1 ~ c4 r 
-     \bar "||" \break
+     \bar "||"
     
      \key df \major
      af'2 g af gf af f af ef 
      af df, af' c, af' df,1 ~ df4 r 
-     \bar "||" \break 
+     \bar "||" \break
   
      \key d \major
      a'2 gs a g a fs a e 
      a d, a' cs, a' d,1 ~ d4 r 
-     \bar "||" \break
+     \bar "||"
     
      \key ef \major 
      bf'2 a bf af bf g bf f 
@@ -164,7 +164,7 @@
      \key e \major
      b'2 as b a b gs b fs
      b e, b' ds, b' e,1 ~ e4 r
-     \bar "||" \break
+     \bar "||"
       
      \key f \major
      c'2 b c bf c a c g
@@ -174,7 +174,7 @@
      \key gf \major
      df'2 c df cf df bf df af
      df gf, df' f, df' gf,1 ~ gf4 r
-     \bar "||" \break
+     \bar "||"
     
      \key g \major
      d'2 cs d c d b d a
@@ -184,7 +184,7 @@
      \key af \major
      ef'2 d ef df ef c ef bf
      ef af, ef' g, ef' af,1 ~ af4 r
-     \bar "||" \break
+     \bar "||"
      
      \key a \major
      e'2 ds e d e cs e b
@@ -194,10 +194,100 @@
      \key bf \major 
      f'2 e f ef f d f c
      f bf, f' a, f' bf,1 ~ bf4 r
-     \bar "||" \break
+     \bar "||"
      
      \key b \major
      fs'2 es fs e fs ds fs cs
      fs b, fs' as, fs' b,1 ~ b4 r
      \bar "|."
     }
+
+"first study 11" = \relative c' {
+      \time 4/4
+      \key f \major
+      f2-> a4-! f-! c'-! a-! f-! a-! g2-> e-> c4-! d-! e-! c-!
+      f2-"sim." a4 f e g c bf a d c b c bf a g \break
+      f2 a4 f d2 bf' a4 c f, a g2 c
+      f, a4 f c f a c bf e, g c, f a f r \bar "|." }
+
+"first study 12" = \relative c' {
+      \time 4/4
+      a'4-! f-! c2-> f4-! a-! c2-> bf4-! g-! e2-> g4-! bf-! a2->
+      c4-"sim." a fs2 a4 d c2 a4 fs d2 fs4 a g2 \break
+      g4 e cs2 e'4 cs a2 bf4 g e2 g4 e c2
+      c'4 a f2 f'4 d c2 bf4 d g,2 c4 e, f r \bar "|." }
+
+"first study 13" = \relative c' {
+      \time 4/4
+      c2-> e4-! c-! d2-> g-> f4-! e-! d-! c-! b-! d-! g-! r
+      c2-"sim." e4 c d2 g f4 e d c b d g r
+      f2 e4 ds e2 d4 cs d c b a gs b e r
+      f,2 e4 ds e2 d4 cs d c b a e'2. r4
+      c2 e4 c d2 g f4 e d c b d g r
+      f2 a4 f d2 a' g4 e f d c e c r \bar "|." }
+
+"first study 14" = \relative c' {
+      \time 4/4
+      \key g \major
+      g'2-> b4-! g-! d'-! b-! g-! b-! a2-> fs-> d4-! e-! fs-! d-!
+      g2-"sim." b4 g fs a d c b e d cs d c b a \break
+      g2 b4 g e2 c' b4 d g, b a2 d,
+      g b4 g d' g, b d c fs, a d g, b g r \bar "|." }
+
+"first study 15" = \relative c' {
+      \time 4/4
+      \key g \major
+      b'4-! g-! d2-> g4-! b-! d2-> c4-! a-! fs2-> a4-! c-! b2->
+      d4-"sim." b gs2 b4 e d2 b4 gs e2 gs4 b a2 \break
+      a4 fs ds2 a'4 c b2 c4 a fs2 a4 fs d2
+      d'4 b g2 g'4 e d2 c4 e a,2 d4 fs, g r \bar "|." }
+
+"first study 16" = \relative c' {
+      \time 4/4
+      \key f \major
+      f4-! g-! a-! bf-! c-! bf-! a-! g-! f-! a-! c-! f-! c-! a-! f-! a-!
+      g-"sim." a bf c d c bf a g a f a e f c d
+      c d e f g f e d c e g c bf a e cs
+      d e f g a g f e d f a d a f d f
+      e f g a bf a g f e g c bf a c f e
+      d c bf a g bf e d c bf a g f2 r \bar "|." }
+
+"first study 17" = \relative c' {
+      \time 4/4
+      \key c \major
+      c4 d e f g f e d c e g c g e c e
+      d e f g a g f e d f a d a f d f
+      e f g a b a g f e g c e c g e g
+      f g a b c b a g f a c f c a f a
+      g a b c d c b a g b d f e c g e
+      d e f g a e f c g' b d g, c2 r \bar "|." }
+
+"first study 18" = \relative c' {
+      \time 4/4
+      \key g \major
+      g'4 a b c d c b a g b d g d b g b
+      a b c d e d c b a b g a fs g e fs
+      d e fs g a g fs e ds fs a c b a fs ds
+      e fs g a b a g fs e g b e b g e g
+      fs g a b c b a g fs a d c b d g fs
+      e d c b a c fs e d c b a g2 r \bar "|." }
+
+"first study 19" = \relative c' {
+      \time 4/4
+      \key c \major
+      g'4 a b c d2 g, a4 b c d e2 a,
+      b4 c d e f2 e d4 c b a gs b e, r
+      f' e d c b d g, r g' f e d c e a, r
+      d c b a f' e d c b a g f e g d g
+      c, d e f g2 c b4 c d b c2 e
+      g4 f e d d c b a g gs a b c2 r \bar "|." }
+
+"first study 20" = \relative c' {
+      \time 4/4
+      \key f \major
+      f a g bf a c bf d c e d f e g f a
+      g a f g e f d e c d bf c a bf g a
+      f g e f d e c f d g e a f bf g c
+      a d bf e c f d g e a f a e g d f
+      c e  bf d a c g bf f a e g d f c e
+      f a c c, f2 r \bar "|." }

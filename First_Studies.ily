@@ -150,3 +150,103 @@
   \header { piece = \markup { \Study " 30"} }
   \new Staff \with { instrumentName = "30." }
   \"first study 30" }
+
+"first study 31 score" = \score {
+  \header { piece = \markup { \Study " 31"} }
+  \new Staff \with { instrumentName = "31." }
+  \"first study 31" }
+
+"first study 32 score" = \score {
+  \header { piece = \markup { \Study " 32"} }
+  \new Staff \with { instrumentName = "32." }
+  \"first study 32" }
+
+"first study 33 score" = \score {
+  \header { piece = \markup { \Study " 33"} }
+  \new Staff \with { instrumentName = "33." }
+  \"first study 33" }
+
+"first study 34 score" = \score {
+  \header { piece = \markup { \Study " 34"} }
+  \new Staff \with { instrumentName = "34." }
+  \"first study 34" }
+
+"first study 35 score" = \score {
+  \header { piece = \markup { \Study " 35"} }
+  \new Staff \with { instrumentName = "35." }
+  \"first study 35" }
+
+"first study 36 score" = \score {
+  \header { piece = \markup { \Study " 36"} }
+  \new Staff \with { instrumentName = "36." }
+  \"first study 36" }
+
+"first study 37 score" = \score {
+  \header { piece = \markup { \Study " 37"} }
+  \new Staff \with { instrumentName = "37." }
+  \"first study 37" }
+
+"first study 38 score" = \score {
+  \header { piece = \markup { \Study " 38"} }
+  \new Staff \with { instrumentName = "38." }
+  \"first study 38" }
+
+"first study 39 score" = \score {
+  \header { piece = \markup { \Study " 39"} }
+  \new Staff \with { instrumentName = "39." }
+  \"first study 39" }
+
+"first study 40 score" = \score {
+  \header { piece = \markup { \Study " 40"} }
+  \new Staff \with { instrumentName = "40." }
+  \"first study 40" }
+
+"first study 41 score" = \score {
+  \header { piece = \markup { \Study " 41"} }
+  \new Staff \with { instrumentName = "41." }
+  \"first study 41" }
+
+"first study 42 score" = \score {
+  \header { piece = \markup { \Study " 42"} }
+  \new Staff \with { instrumentName = "42." }
+  \"first study 42" }
+
+"first study 43 score" = \score {
+  \header { piece = \markup { \Study " 43"} }
+  \new Staff \with { instrumentName = "43." }
+  \"first study 43" }
+
+"first study 44 score" = \score {
+  \header { piece = \markup { \Study " 44"} }
+  \new Staff \with { instrumentName = "44." }
+  \"first study 44" }
+
+"first study 45 score" = \score {
+  \header { piece = \markup { \Study " 45"} }
+  \new Staff \with { instrumentName = "45." }
+  \"first study 45" }
+
+"first study 46 score" = \score {
+  \header { piece = \markup { \Study " 46"} }
+  \new Staff \with { instrumentName = "46." }
+  \"first study 46" }
+
+"first study 47 score" = \score {
+  \header { piece = \markup { \Study " 47"} }
+  \new Staff \with { instrumentName = "47." }
+  \"first study 47" }
+
+"first study 48 score" = \score {
+  \header { piece = \markup { \Study " 48"} }
+  \new Staff \with { instrumentName = "48." }
+  \"first study 48" }
+
+"first study 49 score" = \score {
+  \header { piece = \markup { \Study " 49"} }
+  \new Staff \with { instrumentName = "49." }
+  \"first study 49" }
+
+"first study 50 score" = \score {
+  \header { piece = \markup { \Study " 50"} }
+  \new Staff \with { instrumentName = "50." }
+  \"first study 50" }

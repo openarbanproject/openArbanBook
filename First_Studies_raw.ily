@@ -396,3 +396,271 @@
       a8-"sim." b c d e4 c b8 c d e fs4 d c8 d e fs g4 e d2 r
       g8 fs e d c4 e fs8 e d c b4 d e8 d c b a4 c d8 c b a g4 b
       c8 b a g fs4 a b8 a g fs e4 g a8 g fs e d4 fs g2 r \bar "|." }
+
+"first study 31" = \relative c' {
+      \time 4/4
+      \key f \major
+      f4 d8-. e-. f-. g-. a-. bf-. c2 c, d4 e8-. f-. g-. a-. bf-. c-. d2 d,
+      e4-"sim." f8 g a bf c d e2 e, \break f4 g8 a bf c d e f2 r
+      f4 e8 d c bf a g f2 f' e4 d8 c bf a g f e2 e'
+      d4 c8 bf a g f e d2 d' c4 bf8 a g f e d c2 c'
+      bf4 a8 g f e d c bf2 bf' a4 g8 f f e d c f2 r  \bar "|." }
+
+"first study 32" = \relative c' {
+      \time 4/4
+      c4 d8-. e-. f-. g-. a-. b-. c2 c, d4 e8-. f-. g-. a-. b-. c-. d2 d,
+      e4-"sim." f8 g a b c d e2 e, f4 g8 a b c d e f2 f,
+      g4 a8 b c d e f g2 r g4 f8 e d c b a g2 g'
+      f4 e8 d c b a g f2 f' e4 d8 c b a g f e2 e'
+      d4 c8 b a g f e d2 d' c4 b8 a g f e d c2 r \bar "|." }
+
+"first study 33" = \relative c' {
+      \time 4/4
+      \key g \major
+      b4 c8-. d-. e-. fs-. g-. a-. b2 b, c4 d8-. e-. fs-. g-. a-. b-. c2 c,
+      d4-"sim." e8 fs g a b c d2 d, e4 fs8 g a b c d e2 e,
+      fs4 g8 a b c d e fs2 fs, g4 a8 b c d e fs g2 r
+      g4 fs8 e d c b a g2 g' fs4 e8 d c b a g fs2 fs'
+      e4 d8 c b a g fs e2 e' d4 c8 b a g fs e d2 d'
+      c4 b8 a g fs e d c2 c' b4 a8 g g fs e d g2 r \bar "|." }
+
+"first study 34" = \relative c' {
+      \time 4/4
+      \key d \major
+      d4 e8-. fs-. g-. a-. b-. cs-. d2 d, e4 fs8-. g-. a-. b-. cs-. d-. e2 e,
+      fs4-"sim." g8 a b cs d e fs2 fs, g4 a8 b cs d e fs g2 g,
+      a4 b8 cs d e fs g a2 r a4 g8 fs e d cs b a2 a'
+      g4 fs8 e d cs b a g2 g' fs4 e8 d cs b a g fs2 fs'
+      e4 d8 cs b a g fs e2 e' d4 cs8 b a g fs e d2 r \bar "|." }
+
+"first study 35" = \relative c' {
+      \time 4/4
+      \key bf \major
+      bf4 c8-. d-. ef-. f-. g-. a-. bf2 bf, c4 d8-. ef-. f-. g-.a-. bf-. c2 c,
+      d4-"sim." ef8 f g a bf c d2 d, ef4 f8 g a bf c d ef2 ef,
+      f4 g8 a bf c d ef f2 r f4 ef8 d c bf a g f2 f'
+      ef4 d8 c bf a g f ef2 ef' d4 c8 bf a g f ef d2 d'
+      c4 bf8 a g f ef d c2 c' bf4 a8 g f ef d c bf2 r \bar "|." }
+
+"first study 36" = \relative c' {
+      \time 3/4
+      \key f \major
+      f8-. g-. a-. bf-. c-. a-. f4 c' a g8-. a-. bf-. c-. d-. bf-. g4 d' bf
+      a8-"sim." bf c d e c a4 e' c bf8 c d e f d bf4 f' d
+      c8 d e f g e c4 g' e d8 e f g a f d4 a' f
+      e8 f g a bf g f2 r4
+      a8 g f e d f a4 d, f g8 f e d c e g4 c, e
+      f8 e d c bf d f4 bf, d e8 d c bf a c e4 a, c
+      d8 c bf a g bf d4 g, bf c8 bf a g f a c4 f, a
+      bf8 a g f e g f2 r4 \bar "|." }
+
+"first study 37" =  \relative c' {
+      \time 3/4
+      c8-. d-. e-. f-. g-. e-. c4 g' e d8-. e-. f-. g-. a-. f-. d4 a' f
+      e8-"sim." f g a b g e4 b' g f8 g a b c a f4 c' a
+      g8 a b c d b g4 d' b a8 b c d e c a4 e' c
+      b8 c d e f d b4 f' d c8 d e f g e c2 r4
+      g'8 f e d c e g4 c, e f8 e d c b d f4 b, d
+      e8 d c b a c e4 a, c d8 c b a g b d4 g, b
+      c8 b a g f a c4 f, a b8 a g f e g b4 e, g
+      a8 g f e d f a4 d, f g8 f e d c b c2 r4 \bar "|." }
+
+"first study 38" = \relative c' {
+      \time 3/4
+      \key g \major
+      b8-. c-. d-. e-. fs-. d-. b4 fs' d c8-. d-. e-. fs-. g-. e-. c4 g' e
+      d8-"sim." e fs g a fs d4 a' fs e8 fs g a b g e4 b' g
+      fs8 g a b c a fs4 c' a g8 a b c d b g4 d' b
+      a8 b c d e c a4 e' c b8 c d e fs d b4 fs' d
+      c8 d e fs g e c4 g' e d8 e fs g a fs d4 a' fs d2 r4
+      a'8 g fs e d fs a4 d, fs g8 fs e d c e g4 c, e
+      fs8 e d c b d fs4 b, d e8 d c b a c e4 a, c
+      d8 c b a g b d4 g, b c8 b a g fs a c4 fs, a
+      b8 a g fs e g b4 e, g a8 g fs e d fs a4 d, fs
+      g8 fs e d c e g4 c, e fs8 e d c b d g2 r4 \bar "|." }
+
+"first study 39" = \relative c' {
+      \time 3/4
+      \key d \major
+      d8-. e-. fs-. g-. a-. fs-. d4 a' fs e8-. fs-. g-. a-. b-. g-. e4 b' g
+      fs8-"sim." g a b cs a fs4 cs' a g8 a b cs d b g4 d' b
+      a8 b cs d e cs a4 e' cs b8 cs d e fs d b4 fs' d
+      cs8 d e fs g e cs4 g' e d8 e fs g a fs d2 r4
+      a'8 g fs e d fs a4 d, fs g8 fs e d cs e g4 cs, e
+      fs8 e d cs b d fs4 b, d e8 d cs b a cs e4 a, cs
+      d8 cs b a g b d4 g, b cs8 b a g fs a cs4 fs, a
+      b8 a g fs e g b4 e, g a8 g fs e d cs d2 r4 \bar "|." }
+
+"first study 40" = \relative c' {
+      \time 3/4
+      \key bf \major
+      bf8-. c-. d-. ef-. f-. d-. bf4 f' d c8-. d-. ef-. f-. g-. ef-. c4 g' ef
+      d8-"sim." ef f g a f d4 a' f ef8 f g a bf g ef4 bf' g
+      f8 g a bf c a f4 c' a g8 a bf c d bf g4 d' bf
+      a8 bf c d ef c a4 ef' c bf8 c d ef f d bf2 r4
+      f'8 ef d c bf d f4 bf, d ef8 d c bf a c ef4 a, c
+      d8 c bf a g bf d4 g, bf c8 bf a g f a c4 f, a
+      bf8 a g f ef g bf4 ef, g a8 g f ef d f a4 d, f
+      g8 f ef d c ef g4 c, ef f8 ef d c bf a bf2 r4 \bar "|." }
+
+"first study 41" = \relative c' {
+      \time 4/4
+      \key f \major
+      f4 g8-. a-. bf-. c-. d-. e-. f-. g,-. a-. bf-. c-. d-. e-. f-.
+      g-. a,-. bf-. c-. d-. e-. f-. g-. a1
+      a4 g8-. f-. e-. d-. c-. bf-. a-. g'-. f-. e-. d-. c-. bf-. a-.
+      g-. f'-. e-. d-. c-. bf-. a-. g-. f1 \bar "|." }
+
+"first study 42" = \relative c' {
+      \time 4/4
+      c4 d8-. e-. f-. g-. a-. b-. c-. e,-. f-. g-. a-. b-. c-. d-.
+      e-. g,-. a-. b-. c-. d-. e-. f-. g1
+      g4 f8-. e-. d-. c-. b-. a-. g-. e'-. d-. c-. b-. a-. g-. f-.
+      e-. c'-. b-. a-. g-. f-. e-. d-. c1 \bar "|." }
+
+"first study 43" = \relative c' {
+      \time 4/4
+      \key g \major
+      g'4 e8-. fs-. g-. a-. b-. c-. d-. fs,-. g-. a-. b-. c-. d-. e-.
+      fs-. a,-. b-. c-. d-. e-. fs-. g-. a1
+      a4 g8-. fs-. e-. d-. c-. b-. a-. fs'-. e-. d-. c-. b-. a-. g-.
+      fs-. c'-. b-. a-. g-. fs-. e-. d-. g1 \bar "|." }
+
+"first study 44" = \relative c' {
+      \time 4/4
+      \key d \major
+      d4 e8-. fs-. g-. a-. b-. cs-. d-. fs,-. g-. a-. b-. cs-. d-. e-.
+      fs-. a,-. b-. cs-. d-. e-. fs-. g-. a1
+      a4 g8-. fs-. e-. d-. cs-. b-. a-. fs'-. e-. d-. cs-. b-. a-. g-.
+      fs-. d'-. cs-. b-. a-. g-. fs-. e-. d1 \bar "|." }
+
+"first study 45" = \relative c' {
+      \time 4/4
+      \key bf \major
+      bf4 c8-. d-. ef-. f-. g-. a-. bf-. d,-. ef-. f-. g-. a-. bf-. c-.
+      d-. f,-. g-. a-. bf-. c-. d-. ef-. f1
+      f4 ef8-. d-. c-. bf-. a-. g-. f-. d'-. c-. bf-. a-. g-. f-. ef-.
+      d-. bf'-. a-. g-. f-. ef-. d-. c-. bf1 \bar "|." }
+
+"first study 46" = \relative c' {
+      \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
+      \set Staff.printKeyCancellation = ##f
+      \time 4/4
+      \key c \major
+      c4 e g c e c g e d f g b d b g f
+      e g c e g e c bf a c f f, e g c e,
+      \break
+      \key f \major
+      f a c f c a f a g bf c e e, g c bf
+      a f a c f a, c ef d f, bf d c f, a c
+      \break
+      \key bf \major
+      bf d, f bf d bf f d c ef f a c a f ef
+      d f bf d f d bf af g bf ef ef, d f bf d,
+      \break
+      \key ef \major
+      ef g bf ef bf g ef g f af bf d d, f bf af
+      g ef g bf ef g, bf df c ef, af c bf ef, g bf
+      \break
+      \key af \major
+      af c, ef af c af ef c bf df ef g bf g ef df
+      c ef af c ef c af gf f af df df, c ef af c,
+      \break
+      \key df \major
+      df f af df f df af f ef gf af c ef c af gf
+      f af df f af f df cf bf df gf gf, f af df f,
+      \break
+      \key gf \major
+      gf bf df gf df bf gf bf af cf df f f, af df cf
+      bf gf bf df gf bf, df ff ef gf, cf ef df gf, bf df
+      \break
+      \key b \major
+      b ds, fs b ds b fs ds cs e fs as cs as fs e
+      ds fs b ds fs ds b a gs b e e, ds fs b ds,
+      \break
+      \key e \major
+      e gs b e b gs e gs fs a b ds ds, fs b a
+      gs e gs b e gs, b d cs e, a cs b e, gs b
+      \break
+      \key a \major
+      a cs, e a cs a e cs b d e gs b gs e d
+      cs e a cs e cs a g fs a d d, cs e a cs,
+      \break
+      \key d \major
+      d fs a d fs d a fs e g a cs e cs a g
+      fs a d fs a fs d c b d g g,fs a d fs,
+      \break
+      \key g \major
+      g b d g d b g b a c d fs fs, a d c
+      b g b d g b, d f e g, c e d g, b d
+      \break
+      \override Staff.KeyCancellation.break-visibility = #all-invisible
+      \key c \major
+      c e, g c e c g e d f g b d b g f
+      e g c e g e c g e c' g e c1 \bar "|." }
+
+"first study 47" = \relative c' {
+      \numericTimeSignature \time 4/4
+      \key c \major
+      c8-. g'-. f-. g-. e-. g-. d-. g-. c,-. d-. e-. f-. g-. f-. e-. d-.
+      c-. a'-. g-. a-. f-. a-. e-. a-. d,-. e-. f-. g-. a-. g-. f-. e-.
+      d-"sim." b' a b g b f b e, f g a b a g f
+      e c' b c a c g c f, g a b c b a g
+      f d' c d b d a d g, a b c d c b a
+      g e' d e c e b e a, b c d e d c b
+      a f' e f d f c f b, c d e f e d c
+      b g' f g e g d g c, e e, e' c4 r
+      c8 g' f g e g d g c, d e f g f e d
+      c f e f d f c f b, c d e f e d c
+      b e d e c e b e a, b c d e d c b
+      a d c d b d a d g, a b c d c b a
+      g c b c a c g c f, g a b c b a g
+      f b a b g b f b e, f g a b a g f
+      e a g a f a e a d, e f g a g f e
+      d g f g e g d g c, e g c c,4 r \bar "|." }
+
+"first study 48" = \relative c' {
+      \time 4/4
+      \key c \major
+      c4 d8-. c-. e-. c-. f-. c-. g'-. c,-. a'-. c,-. g'-. c,-. f-. c-.
+      e4 c'8-. b-. a-. g-. f-. e-.
+      d4-"sim." e8 d f d g d a' d, b' d, a' d, g d f4 d'8 c b a g f
+      e4 f8 e g e a e b' e, c' e, b' e, a e g4 e'8 d c b a g
+      f4 g8 f a f b f c' f, d' f, c' f, b f a4 f'8 e d c b a
+      g4 a8 g b g c g d' g, e' g, d' g, c g b4 g'8 f e d c b
+      a4 b8 a c a d a e' a, f' a, e' a, d a c4 f8 e d c b a
+      g4 a8 g b g c g d' g, e' g, d' g, c g b4 e8 d c b a g
+      f4 g8 f a f b f c' f, d' f, c' f, b f a4 d8 c b a g f
+      e4 f8 e g e a e b' e, c' e, b' e, a e g4 c8 b a g f e
+      d4 e8 d f d g d a' d, b' d, a' d, g d f4 b8 a g f e d
+      c4 d8 c e c f c g' c e, g c,4 r \bar "|." }
+
+"first study 49" = \relative c' {
+      \time 2/4
+      \partial 4.
+      \set Timing.beamExceptions = #'()
+      \set Timing.baseMoment = #(ly:make-moment 2/4)
+      c'8-. b-. c-. a-. c-. g-. c-. f,-. c'-. e,-. c'-.
+      d,-. d'-. c-. d-. b-. d-. a-. d-. g,-. d'-. f,-. d'-.
+      e,-"sim." e' d e c e b e a, e' g, e'
+      f, f' e f d f c f b, f' a, f'
+      g, g' f g e g d g c, g' b, g'
+      a, f' e f d f c f b, f' a, f'
+      g, e' d e c e b e a, e' g, e'
+      f, d' c d b d a d g, d' f, d'
+      e, c' b c a c g c f, c' e, c'
+      d, b' a b g b f a e g d g
+      c, g' b, g' c,4 r \bar "|." }
+
+"first study 50" = \relative c' {
+      \time 2/4
+      c8-. c'-. b,-. b'-. c,-. c'-. cs,-. cs'-. d,-. d'-. ds,-. ds'-. e,-. e'-. g,-. g'-.
+      f,-"sim." f' e, e' d, d' cs, cs' d, d' e, e' f, f' fs, fs'
+      g, g' f, f' e, e' g, g' f, f' e, e' d, d' c, c'
+      b, b' c, c' d, d' f, f' e, e' d, d' c, c' c, r \bar "||"
+      b b' c, c' d, d' e, e' f, f' d, d' e, e' g, g'
+      fs, fs' f, f' e, e' d, d' c, c' e, e' d, d' d, r \bar "||"
+      c8 c' b, b' c, c' cs, cs' d, d' ds, ds' e, e' g, g'
+      f, f' e, e' d, d' cs, cs' d, d' e, e' f, f' fs, fs'
+      g, g' f, f' e, e' g, g' f, f' e, e' d, d' c, c'
+      b, b' c, c' d, d' f, f' e, e' d, d' c, c' c, r \bar "|." }

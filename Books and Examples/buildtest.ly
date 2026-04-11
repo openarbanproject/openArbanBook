@@ -58,6 +58,7 @@
     \"first study 24 score"
     \"first study 25 score"
     \"first study 26 score"
+    \pageBreak
     \"first study 27 score"
     \"first study 28 score"
     \"first study 29 score"
@@ -69,15 +70,18 @@
     \"first study 35 score"
     \"first study 36 score"
     \"first study 37 score"
+    \pageBreak
     \"first study 38 score"
     \"first study 39 score"
+    \pageBreak
     \"first study 40 score"
     \"first study 41 score"
     \"first study 42 score"
     \"first study 43 score"
     \"first study 44 score"
+    \pageBreak
     \"first study 45 score"
-    \"first study 46 score"
+    \"first study 46 score" % I'd rather this was on one page :-(
     \"first study 47 score"
     \"first study 48 score"
     \"first study 49 score"

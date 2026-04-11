@@ -37,27 +37,27 @@
   \new Staff \with { instrumentName = "7." }
   \"intervals 7" }
 
-"intervals 8 score" = \score {
-  \header { piece = \markup { \Study " 8" } }
-  \new Staff \with { instrumentName = "8." }
-  \"intervals 8" }
+"octaves 1 score" = \score {
+  \header { piece = \markup { \Study " 1" } }
+  \new Staff \with { instrumentName = "1." }
+  \"octaves 1" }
 
-"intervals 9 score" = \score {
-  \header { piece = \markup { \Study " 9" } }
-  \new Staff \with { instrumentName = "9." }
-  \"intervals 9" }
+"octaves 2 score" = \score {
+  \header { piece = \markup { \Study " 2" } }
+  \new Staff \with { instrumentName = "2." }
+  \"octaves 2" }
 
-"intervals 10 score" = \score {
-  \header { piece = \markup { \Study " 10"} }
-  \new Staff \with { instrumentName = "10." }
-  \"intervals 10" }
+"octaves 3 score" = \score {
+  \header { piece = \markup { \Study " 3"} }
+  \new Staff \with { instrumentName = "3." }
+  \"octaves 3" }
 
-"intervals 11 score" = \score {
-  \header { piece = \markup { \Study " 11"} }
-  \new Staff \with { instrumentName = "11." }
-  \"intervals 11" }
+"tenths 4 score" = \score {
+  \header { piece = \markup { \Study " 4"} }
+  \new Staff \with { instrumentName = "4." }
+  \"tenths 4" }
 
-"intervals 12 score" = \score {
-  \header { piece = \markup { \Study " 12"} }
-  \new Staff \with { instrumentName = "12." }
-  \"intervals 12" }
+"tenths 5 score" = \score {
+  \header { piece = \markup { \Study " 5"} }
+  \new Staff \with { instrumentName = "5." }
+  \"tenths 5" }

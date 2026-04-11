@@ -191,7 +191,7 @@
     f''8 c''' e'' c''' d'' c''' c'' bf'' c''' bf' c''' a' c''' g' c''' a'
     c''' bf' c''' c'' c''' d'' c''' e'' c''' f'' c''' g'' c''' a'' c''' g'' \bar ":|."
     f'' c''' a'' c''' c'' c''' a'' c''' f''1
-    \bar "||" \break
+    \bar "|." \break
 }
 
 "intervals 3" = {
@@ -237,7 +237,7 @@
     cs' e'' b e'' a e'' gs e'' a e'' b e'' cs' e'' d' e''
     e' e'' fs' e'' gs' e'' a' e'' b' e'' a' e'' gs' e'' fs' e''
     e' e'' d' e'' cs' e'' b e'' a4
-    \bar "||" \pageBreak
+    \bar "||" \break
 
     \key bf \major
     r16 f'' e'' f''
@@ -278,7 +278,7 @@
     fs' a'' e' a'' d' a'' cs' a'' d' a'' e' a'' fs' a'' g' a''
     a' a'' b' a'' cs'' a'' d'' a'' e'' a'' d'' a'' cs'' a'' b' a''
     a' a'' g' a'' fs' a'' e' a'' d'4
-    \bar "||" \pageBreak
+    \bar "||" \break
 
     \key ef \major
     r16 bf'' a'' bf''
@@ -302,7 +302,7 @@
     a' c''' g' c''' f' c''' e' c''' f' c''' g' c''' a' c''' bf' c'''
     c'' c''' d'' c''' e'' c''' f'' c''' g'' c''' f'' c''' e'' c''' d'' c'''
     c'' c''' bf' c''' a' c''' g' c''' f'4
-    \bar "||" \break
+    \bar "|." \break
 }
 
 "intervals 4" = {
@@ -342,7 +342,7 @@
     gs' b a' b as' b b' b bs' b cs'' b d'' b ds'' b
     e'' b ds'' b d'' b cs'' b bs' b b' b as' b a' b
     gs' b g' b fs' b es' b e' b ds' b e'4
-    \bar "||" \pageBreak
+    \bar "||" \break
 
     \key f \major
     f'16 c' e' c' f' c' gf' c' g' c' gf' c' g' c' af' c'
@@ -377,7 +377,7 @@
     cs'' e' d'' e' ds'' e' e'' e' f'' e' fs'' e' g'' e' gs'' e'
     a'' e' gs'' e' g'' e' fs'' e' f'' e' e'' e' ds'' e' d'' e'
     cs'' e' c'' e' b' e' as' e' a' e' gs' e' a'4
-    \bar "||" \pageBreak
+    \bar "||" \break
 
     \key bf \major
     bf'16 f' a' f' bf' f' b' f' c'' f' b' f' c'' f' df'' f'
@@ -440,7 +440,7 @@
     gs' e'' g' e'' fs' e'' f' e'' e' e'' ds' e'' d' e'' cs' e''
     c' e'' cs' e'' d' e'' ds' e'' e' e'' f' e'' fs' e'' g' e''
     gs' e'' a' e'' as' e'' b' e'' e' e'' f' e'' fs' e'' gs' e''
-    a' \bar "||" \pageBreak
+    a' \bar "||" \break
 
     \key bf \major
     f''16 e'' f'' ef'' f'' d'' f'' df'' f'' c'' f'' b' f'' bf' f''
@@ -476,7 +476,7 @@
     cs'' a'' c'' a'' b' a'' as' a'' a' a'' gs' a'' g' a'' fs' a''
     es' a'' fs' a'' g' a'' gs' a'' a' a'' as' a'' b' a'' bs' a''
     cs'' a'' d'' a'' ds'' a'' e'' a'' a' a'' as' a'' b' a'' cs'' a''
-    d'' \bar "||" \pageBreak
+    d'' \bar "||" \break
 
     \key ef \major
     bf''16 a'' bf'' af'' bf'' g'' bf'' gf'' bf'' f'' bf'' e'' bf'' ef'' bf''
@@ -596,7 +596,7 @@
     \bar "|."
 }
 
-"intervals 8" = \relative c' {
+"octaves 1" = \relative c' {
     \time 4/4
     \key f \major
     f4( f') e,( e') d,( d') c,( c') a( a') g,( g') f1
@@ -606,7 +606,7 @@
     bf,4( bf') a,( a') g,( g') f,( f') e,( e') d,( d') c1
     a4( a') g,( g') f,( f') e,( e') d,( d') c,( c') f1 \bar "|." }
 
-"intervals 9" = \relative c' {
+"octaves 2" = \relative c' {
     \time 4/4
     \key c \major
     c8( c') b,( b') c,( c') d,( d') e,( e') d,( d') e,( e') f,( f')
@@ -622,7 +622,7 @@
     d,( d') f,( f') e,( e') d,( d') c,( c') e,( e') d,( d') c,( c')
     b,( b') c,( c') d,( d') e,( e') c1 \bar "|." }
 
-"intervals 10" = \relative c' {
+"octaves 3" = \relative c' {
     \time 12/8
     \key f \major
     f8( f' f,) fs( fs' fs,) g( g' g,) gs( gs' gs,)
@@ -652,7 +652,7 @@
     c( c' c,) cs( cs' cs,) d( d' d,) e( e' e,)
     f( f' f,) e( e' e,) f4.( f'4) r8 \bar "|." }
 
-"intervals 11" = \relative c' {
+"tenths 4" = \relative c' {
     \time 4/4
     c4( e') d,( f') e,( g') f2 d,4( f') e,( g') f,( a') g2
     g4( e,) f'( d,) e'( c,) d2 f'4( d,) e'( c,) d'( b,) c2
@@ -661,7 +661,7 @@
     c4( e') d,( f') e,( g') f2 d,4( f') e,( g') f,( a') g2
     g4( e,) f'( d,) e'( c,) d2 f'4( d,) e'( c,) d'( b,) c2 \bar "|." }
 
-"intervals 12" = \relative c' {
+"tenths 5" = \relative c' {
     \time 2/4
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #(ly:make-moment 2/4)

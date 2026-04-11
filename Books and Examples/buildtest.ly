@@ -68,23 +68,42 @@
   \bookpart {
     \header {
       dedication = "openArbanProject"
-      tagline = #( string-append licence )
       title = \intervalstitle
   }
 
   \markup \vspace #1
-  \"intervals 1 score"
-  \"intervals 2 score"
+  \"intervals 1 score" \pageBreak
+  \"intervals 2 score" \pageBreak
   \"intervals 3 score"
   \"intervals 4 score"
   \"intervals 5 score"
   \"intervals 6 score"
   \"intervals 7 score"
-  \"intervals 8 score"
-  \"intervals 9 score"
-  \"intervals 10 score"
-  \"intervals 11 score"
-  \"intervals 12 score"
+ }
+
+  \bookpart {
+    \header {
+      dedication = "openArbanProject"
+      tagline = #( string-append licence )
+      title = \octavestitle
+  }
+
+  \markup \vspace #1
+  \"octaves 1 score"
+  \"octaves 2 score" \pageBreak
+  \"octaves 3 score"
+ }
+
+  \bookpart {
+   \header {
+     dedication = "openArbanProject"
+     tagline = #( string-append licence )
+     title = \tenthstitle
+  }
+
+  \markup \vspace #1
+   \"tenths 4 score"
+   \"tenths 5 score"
  }
 
 } % end of book

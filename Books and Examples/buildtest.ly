@@ -14,6 +14,7 @@
 \include "../First_Studies.ily"
 \include "../Intervals.ily"
 \include "../Syncopation.ily"
+\include "../Dotted_Rhythm.ily"
 
 \book {
   \bookOutputName #( string-append "openArbanBook-" lang )
@@ -111,6 +112,24 @@
     \"syncopation 10 score"
     \"syncopation 11 score"
     \"syncopation 12 score"
+   }
+
+   % Dotted Rhythms
+   \bookpart {
+     \header {
+       dedication = "openArbanProject"
+       tagline = #( string-append licence )
+       title = \dottedtitle
+     }
+
+     \markup \vspace #1
+     \"dotted rhythm 13 score"
+     \"dotted rhythm 14 score"
+     \"dotted rhythm 15 score"
+     \"dotted rhythm 16 score"
+     \"dotted rhythm 17 score"
+     \pageBreak
+     \"dotted rhythm 18 score"
    }
 
   % Intervals, Octaves and Tenths

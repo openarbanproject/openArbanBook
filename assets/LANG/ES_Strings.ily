@@ -6,6 +6,7 @@ licence = "Esta obra está bajo una licencia de CC BY-SA 4.0"
 
 initialstudiestitle = "Primeros estudios"
 syncopationstudiestitle = "Estudios sobre las síncopas"
+intervalstitle = "Estudios sobre los intervalos"
 
 Study = "Estudio"
 Studies = "Estudios"

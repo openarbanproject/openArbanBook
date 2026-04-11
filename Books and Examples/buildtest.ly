@@ -12,9 +12,10 @@
 
 % Load scores
 \include "../First_Studies.ily"
-\include "../Intervals.ily"
 \include "../Syncopation.ily"
 \include "../Dotted_Rhythm.ily"
+\include "../Fanfare_Rhythm.ily"
+\include "../Intervals.ily"
 
 \book {
   \bookOutputName #( string-append "openArbanBook-" lang )
@@ -32,35 +33,28 @@
     \"first study 2 score"
     \"first study 3 score"
     \"first study 4 score"
-    \"first study 5 score"
-    \pageBreak
+    \"first study 5 score"  \pageBreak
     \"first study 6 score"
     \"first study 7 score"
-    \"first study 8 score"
-    \pageBreak
-    \"first study 9 score"
-    \pageBreak
-    \"first study 10 score"
-    \pageBreak
+    \"first study 8 score"  \pageBreak
+    \"first study 9 score"  \pageBreak
+    \"first study 10 score" \pageBreak
     \"first study 11 score"
     \"first study 12 score"
     \"first study 13 score"
     \"first study 14 score"
-    \"first study 15 score"
-    \pageBreak
+    \"first study 15 score" \pageBreak
     \"first study 16 score"
     \"first study 17 score"
     \"first study 18 score"
-    \"first study 19 score"
-    \pageBreak
+    \"first study 19 score" \pageBreak
     \"first study 20 score"
     \"first study 21 score"
     \"first study 22 score"
     \"first study 23 score"
     \"first study 24 score"
     \"first study 25 score"
-    \"first study 26 score"
-    \pageBreak
+    \"first study 26 score" \pageBreak
     \"first study 27 score"
     \"first study 28 score"
     \"first study 29 score"
@@ -71,17 +65,14 @@
     \"first study 34 score"
     \"first study 35 score"
     \"first study 36 score"
-    \"first study 37 score"
-    \pageBreak
+    \"first study 37 score" \pageBreak
     \"first study 38 score"
-    \"first study 39 score"
-    \pageBreak
+    \"first study 39 score" \pageBreak
     \"first study 40 score"
     \"first study 41 score"
     \"first study 42 score"
     \"first study 43 score"
-    \"first study 44 score"
-    \pageBreak
+    \"first study 44 score" \pageBreak
     \"first study 45 score"
     \"first study 46 score" % I'd rather this was on one page :-(
     \"first study 47 score"
@@ -103,8 +94,7 @@
     \"syncopation 2 score"
     \"syncopation 3 score"
     \"syncopation 4 score"
-    \"syncopation 5 score"
-    \pageBreak
+    \"syncopation 5 score" \pageBreak
     \"syncopation 6 score"
     \"syncopation 7 score"
     \"syncopation 8 score"
@@ -127,9 +117,28 @@
      \"dotted rhythm 14 score"
      \"dotted rhythm 15 score"
      \"dotted rhythm 16 score"
-     \"dotted rhythm 17 score"
-     \pageBreak
+     \"dotted rhythm 17 score" \pageBreak
      \"dotted rhythm 18 score"
+   }
+
+   % Fanfare Rhythms
+   \bookpart {
+     \header {
+       dedication = "openArbanProject"
+       tagline = #( string-append licence )
+       title = \fanfareTitle
+     }
+
+     \markup \vspace #1
+     \"fanfare 19 score"
+     \"fanfare 20 score" \pageBreak
+     \"fanfare 21 score"
+     \"fanfare 22 score"
+     \"fanfare 23 score" \pageBreak
+     \"fanfare 24 score"
+     \"fanfare 25 score" \pageBreak
+     \"fanfare 26 score" \pageBreak
+     \"fanfare 27 score"
    }
 
   % Intervals, Octaves and Tenths

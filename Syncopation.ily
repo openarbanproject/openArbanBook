@@ -1,6 +1,6 @@
 % Syncopation Studies
 
-\include "Syncopation_raw.ily"
+\include "raw_data_files/Syncopation_raw.ily"
 
 "syncopation 1 score" = \score {
     \header { piece = \markup { \Study " 1" } }

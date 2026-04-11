@@ -1,5 +1,5 @@
 % First 50 Studies
-\include "First_Studies_raw.ily"
+\include "raw_data_files/First_Studies_raw.ily"
 
 "first study 1 score" = \score {
   \header { piece = \markup { \Study " 1" } }

@@ -1,6 +1,6 @@
 % Dotted Rhythm Studies
 
-\include "Dotted_Rhythm_raw.ily"
+\include "raw_data_files/Dotted_Rhythm_raw.ily"
 
 "dotted rhythm 13 score" = \score {
   \header { piece = \markup { \Study " 13"} }

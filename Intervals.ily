@@ -1,6 +1,6 @@
 % Interval Studies
 
-\include "Intervals_raw.ily"
+\include "raw_data_files/Intervals_raw.ily"
 
 "intervals 1 score" = \score {
   \header { piece = \markup { \Study " 1" } }

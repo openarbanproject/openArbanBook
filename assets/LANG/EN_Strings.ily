@@ -5,7 +5,7 @@ maintitle = "Complete Celebrated Method For The Cornet"
 licence = "This work is licensed under a CC BY-SA 4.0 licence"
 
 initialstudiestitle = "First Studies"
-syncopationstudiestitle = "Studies On Syncopation"
+syncopationtitle = "Studies On Syncopation"
 intervalstitle = "Studies In Mixed Intervals"
 octavestitle = "Studies in Octaves"
 tenthstitle = "Studies in Tenths"

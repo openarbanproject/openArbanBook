@@ -13,6 +13,7 @@
 % Load scores
 \include "../First_Studies.ily"
 \include "../Intervals.ily"
+\include "../Syncopation.ily"
 
 \book {
   \bookOutputName #( string-append "openArbanBook-" lang )
@@ -88,7 +89,31 @@
     \"first study 50 score"
   }
 
-  % Intervals Section
+  % Syncopation
+  \bookpart {
+    \header {
+      dedication = "openArbanProject"
+      tagline = #( string-append licence )
+      title = \syncopationtitle
+    }
+
+    \markup \vspace #1
+    \"syncopation 1 score"
+    \"syncopation 2 score"
+    \"syncopation 3 score"
+    \"syncopation 4 score"
+    \"syncopation 5 score"
+    \pageBreak
+    \"syncopation 6 score"
+    \"syncopation 7 score"
+    \"syncopation 8 score"
+    \"syncopation 9 score"
+    \"syncopation 10 score"
+    \"syncopation 11 score"
+    \"syncopation 12 score"
+   }
+
+  % Intervals, Octaves and Tenths
   \bookpart {
     \header {
       dedication = "openArbanProject"

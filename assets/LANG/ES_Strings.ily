@@ -1,14 +1,16 @@
 % Spanish strings
 lang = "spanish"
 
-maintitle = "Método Completo de Corneta"
+mainTitle = "Método Completo de Corneta"
 licence = "Esta obra está bajo una licencia de CC BY-SA 4.0"
 
-initialstudiestitle = "Primeros estudios"
-syncopationstudiestitle = "Estudios sobre las síncopas"
-intervalstitle = "Estudios sobre los intervalos"
-octavestitle = "Estudios de las octavas"
-tenthstitle = "Estudios de las décimas"
+initialstudiesTitle = "Primeros estudios"
+syncopationTitle = "Estudios sobre las síncopas"
+dottedTitle = \markup { \line { "Estudios compuestos del ritmo " \fontsize #-3 { \rhythm { 8.[ 16] } } } }
+fanfareTitle = \markup { \line { "Estudios compuestos del ritmo " \fontsize #-3 { \rhythm { 8[ 16 16] } } } }
+intervalsTitle = "Estudios sobre los intervalos"
+octavesTitle = "Estudios de las octavas"
+tenthsTitle = "Estudios de las décimas"
 
 Study = "Estudio"
 Studies = "Estudios"

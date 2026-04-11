@@ -2,9 +2,9 @@
 \language "english"
 
 % Load translated strings. Uncomment the language to use.
-\include "../assets/LANG/EN_Strings.ily"
+%\include "../assets/LANG/EN_Strings.ily"
 %\include "../assets/LANG/FR_Strings.ily"
-%\include "../assets/LANG/ES_Strings.ily"
+\include "../assets/LANG/ES_Strings.ily"
 
 % Load settings before loading scores
 \include "../assets/oap_style_default.ily"
@@ -24,7 +24,7 @@
     \header {
       dedication = "openArbanProject"
       tagline = #( string-append licence )
-      title = \initialstudiestitle
+      title = \initialstudiesTitle
     }
 
     \markup \vspace #1
@@ -95,7 +95,7 @@
     \header {
       dedication = "openArbanProject"
       tagline = #( string-append licence )
-      title = \syncopationtitle
+      title = \syncopationTitle
     }
 
     \markup \vspace #1
@@ -119,7 +119,7 @@
      \header {
        dedication = "openArbanProject"
        tagline = #( string-append licence )
-       title = \dottedtitle
+       title = \dottedTitle
      }
 
      \markup \vspace #1
@@ -136,7 +136,7 @@
   \bookpart {
     \header {
       dedication = "openArbanProject"
-      title = \intervalstitle
+      title = \intervalsTitle
   }
 
   \markup \vspace #1
@@ -153,7 +153,7 @@
     \header {
       dedication = "openArbanProject"
       tagline = #( string-append licence )
-      title = \octavestitle
+      title = \octavesTitle
   }
 
   \markup \vspace #1
@@ -166,7 +166,7 @@
    \header {
      dedication = "openArbanProject"
      tagline = #( string-append licence )
-     title = \tenthstitle
+     title = \tenthsTitle
   }
 
   \markup \vspace #1

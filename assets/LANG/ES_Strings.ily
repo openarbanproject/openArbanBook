@@ -8,6 +8,7 @@ initialstudiesTitle = "Primeros estudios"
 syncopationTitle = "Estudios sobre las síncopas"
 dottedTitle = \markup { \line { "Estudios compuestos del ritmo " \fontsize #-3 { \rhythm { 8.[ 16] } } } }
 fanfareTitle = \markup { \line { "Estudios compuestos del ritmo " \fontsize #-3 { \rhythm { 8[ 16 16] } } } }
+sixeightTitle = "Estudio del compás de seis por ocho"
 intervalsTitle = "Estudios sobre los intervalos"
 octavesTitle = "Estudios de las octavas"
 tenthsTitle = "Estudios de las décimas"

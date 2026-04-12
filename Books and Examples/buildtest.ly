@@ -16,7 +16,7 @@
 \book {
   \bookOutputName #( string-append "openArbanBook-" lang )
   
-  % First Studies Section
+  % Studies In Compound Duple Time
   \bookpart {
     \header {
       dedication = "openArbanProject"
@@ -25,8 +25,17 @@
     }
 
     \markup \vspace #1
-    \"six-eight 29 score"
-
+    \"six-eight 28 score"
+    \"six-eight 29 score" \pageBreak
+    \"six-eight 30 score"
+    \"six-eight 31 score"
+    \"six-eight 32 score"
+    \"six-eight 33 score" \pageBreak
+    \"six-eight 34 score"
+    \"six-eight 35 score" \pageBreak
+    \"six-eight 36 score" \pageBreak
+    \"six-eight 37 score" \pageBreak
+    \"six-eight 38 score"
   }
 
 } % end of book

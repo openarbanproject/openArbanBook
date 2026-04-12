@@ -8,9 +8,10 @@ initialstudiesTitle = "First Studies"
 syncopationTitle = "Studies On Syncopation"
 dottedTitle = \markup { \line { "Rhythmic Figure " \fontsize #-3 { \rhythm { 8.[ 16] } } } }
 fanfareTitle = \markup { \line { "Rhythmic Figure " \fontsize #-3 { \rhythm { 8[ 16 16] } } } }
+sixeightTitle = "Studies In Six-Eight Time"
 intervalsTitle = "Studies In Mixed Intervals"
-octavesTitle = "Studies in Octaves"
-tenthsTitle = "Studies in Tenths"
+octavesTitle = "Studies In Octaves"
+tenthsTitle = "Studies In Tenths"
 
 Study = "Study"
 Studies = "Studies"

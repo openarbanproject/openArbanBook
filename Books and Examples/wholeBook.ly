@@ -15,6 +15,7 @@
 \include "../Syncopation.ily"
 \include "../Dotted_Rhythm.ily"
 \include "../Fanfare_Rhythm.ily"
+\include "../Six-Eight.ily"
 \include "../Intervals.ily"
 
 \book {
@@ -139,6 +140,28 @@
      \"fanfare 25 score" \pageBreak
      \"fanfare 26 score" \pageBreak
      \"fanfare 27 score"
+   }
+
+   % Studies In Compound Duple Time
+   \bookpart {
+     \header {
+       dedication = "openArbanProject"
+       tagline = #( string-append licence )
+       title = \sixeightTitle
+     }
+
+     \markup \vspace #1
+     \"six-eight 28 score"
+     \"six-eight 29 score" \pageBreak
+     \"six-eight 30 score"
+     \"six-eight 31 score"
+     \"six-eight 32 score"
+     \"six-eight 33 score" \pageBreak
+     \"six-eight 34 score"
+     \"six-eight 35 score" \pageBreak
+     \"six-eight 36 score" \pageBreak
+     \"six-eight 37 score" \pageBreak
+     \"six-eight 38 score"
    }
 
   % Intervals, Octaves and Tenths

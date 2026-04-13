@@ -114,7 +114,7 @@ Fine = {
       d( cs d e d c) b( as b c b a)
       g g'( f e d c b a g f e d)
       \time 2/4
-      \tuplet 6/4 { e( f) g a b } c8 r \bar "|."
+      \tuplet 6/4 { c e( f) g a b } c8 r \bar "|."
     }
   }
 }

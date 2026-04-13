@@ -53,7 +53,7 @@
     % line 4
     % Next mesure seams 5 beat long on original score. Replacing "g4 r8 g", with a tuplet to explicitely fit 4 beats
     \tuplet 6/4 4 { f( g) b d( b) g f( g) b d( b) g } \tuplet 3/2 8 { e[( g) c] e( c) e } g8 \tuplet 3/2 { r8 g,16 } |
-    \tuplet 6/4 4 { fs16( a) c ef( c) a g( b) d ef( d) b g( b) d e( d) b g( b) d e( d) b } |
+    \tuplet 6/4 4 { fs16( a) c ef( c) a fs( a) c ef( c) a g( b) d e( d) b g( b) d e( d) b } |
     \tuplet 3/2 8 { a[( gs) a-.] b( a) b c[( b) c] d( e) fs } g8 \tuplet 3/2 8 { g16( fs) g } \tuplet 6/4 4 { a( g) fs-. a( g) fs-. } |
     
     % line 5
@@ -68,14 +68,14 @@
     
     % line 7
     \tuplet 6/4 4 { c( e) g c e g f( d) b g f d c( e) g c e g f( d) b g f d } |
-    \tuplet 6/4 4 { c( b c) d e f fs g gs a bf b } c4 \bar "||"
-    
+    \tuplet 6/4 4 { c( b c) d e f fs g gs a bf b } c4 \bar "||" \break
+
+    % line 8
     \key f \major
     % Modified bf! reminders that seemed inconistent
     r16\p c( b c |
     bf?\< c a c g c e, c' f,) a( gs a\!) c,\p c'( b c) |
     
-    %line 8
     bf?\<( c a c g c e, c') f,4\p~ 16 c'( b c) |
     bf?\<( c a c g c e, c') f,-. a\p( gs a) c, c'( b c) |
     % Removed a strange reminder accidental on the last "e"

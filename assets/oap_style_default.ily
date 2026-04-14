@@ -1,9 +1,7 @@
 % Default style sheet for openArbanProject
 
-\version "2.24.0"
-\language "english"
-
 \paper {
+  % Give each score a title (legacy style)
   scoreTitleMarkup = \markup { \fill-line { \null \fontsize #4 \bold \fromproperty #'header:piece \fromproperty #'header:composer } }
 
   % Set fonts

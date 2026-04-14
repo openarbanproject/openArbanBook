@@ -1,5 +1,4 @@
 % functions for openArbanProject
-\version "2.24.0"
 
 DCfine = {
   \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)

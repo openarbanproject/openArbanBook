@@ -56,7 +56,47 @@
       fs4. fs8( es fs) |
       g4. g8 \! \f ( f e) \bar "||" |
       \key c \major
+      \override TupletBracket.bracket-visibility = ##f
+      \set subdivideBeams = ##t
+      \set baseMoment = #(ly:make-moment 1/8)
+      \set beatStructure = 2,2,2,2
+      \tuplet 3/2 { e16( f e } d) g,-. d'4.( e8) |
+      \tuplet 3/2 { d16( e d } c) e,-. g4~  \once \set subdivideBeams = ##f 16 e'(f e) |
+      \tuplet 3/2 { d( e d } g, e') \tuplet 3/2 { d( e d } g, e') \tuplet 3/2 { d( e d } g, d') |
       
+      \set subdivideBeams = ##f
+      c( e,) f-. fs-. g-. a-. bf-. b-. c-. cs-. d-. ds-. |
+      \set subdivideBeams = ##t
+      \tuplet 3/2 { e( f e } d) g,-. d'4.( e8) |
+      \tuplet 3/2 { d16( e d } c) e,-. g4~ \once \set subdivideBeams = ##f 16 e'( f e) |
+      \tuplet 3/2 { d( e d } g, e') \tuplet 3/2 { d( e d } g, e') \tuplet 3/2 { d( e d } g, d') |
+      \set subdivideBeams = ##f
+      c4 c16( df) ef-. df-. c-. bf-. af-. g-.
+      \bar "||"
       
+      \key af \major
+      f( g af g f c) d-. e-. f( e f) g-. |
+      af( bf c bf af g) f-. e-. f-. g-. af-. bf-. |
+      c( df c b c df ef df c b af b) |
+      g c( df c) g-. c-. f,-. c'-. e,-. c'-. c,-. c'-. |
+      f,( g af g f c) d-. e-. f( e f) g-. |
+      
+      af( bf c bf af g) f-. g-. af-. bf-. c-. df-. |
+      ef-. af( g) f-. f( ef) d-. df-. c( cf) b-. bf-. | %Chech if last bf is bff
+      af( g af) c-. ef( af,) c-. ef-. af8 r8 |
+      f16-. c( b c df c b c) e-. c( b c) |
+      f-. c-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. f-. c-. |
+      g'-. c,( b c df c b c) e-. c( b c) |
+      g'-. c,-. bf'-. c,-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. |
+      f( e) ef-. d-. df( c) b-. bf-. a( af) g-. gf-. | % Added staccattoes
+      f( af) c-. bf-. af-. g-. f-. ef-. df-.( e) g-. bf-. |
+      af( f) af-. c-. bf( g) bf-. df-. c( e) g-. e-. |
+      
+      e( f) c-. af-. f( c) f-. af-. g( e) g-. bf-. |
+      af( f) af-. c-. bf( g) bf-. df-. c( e) g-. e-. |
+      e( f) c-. af-. f( c) f-. af-. g( e) g-. bf-. |
+      af( f) af-. c-. bf( g) bf-. df-. c( e) g-. e-. |
+      e( f) c-. af-. af( g) f-. e-. f8 r8 |
+      \fine
     }
   }

@@ -7,27 +7,28 @@
   
   \score {
     %% Characteristic study no. 12 - Ed. 1864 p. 204
+    %%                               Ed. 1893 p. 296
     \relative c' { 
       \time 3/4
       % \set Staff.explicitKeySignatureVisibility = #end-of-line-invisible
       \key af \major
-      \tempo "Allegro moderato"
+      \tempo "Allegro moderato."
       f16\f ( g af g f c) d-. e-. f( e f) g-. |
-      af( bf c bf af g) f-. e-. f-. g-. af-. bf |
-      c( df c b c df ef df c b af bf) |
-      g c( df c) g-. c-. f,-. c'-. e,-. c'-. c,-. c'-. |
+      af( bf c bf af g) f-. e-. f-. g-. af-. bf-. |
+      c( df c b c df ef df c bf af bf) | % added flat on the second to last b as on ed1893
+      g-. c( df c) g-. c-. f,-. c'-. e,-. c'-. c,-. c'-. |
       
       f,( g af g f c) d-. e-. f( e f) g-. |
       af( bf c bf af g) f-. g-. af-. bf-. c-. df-. |
-      ef-. af( g) f-. f( ef) d-. df-. c( cf) b-. bf-. |
-      af( g af) c-. ef( af,) c-. ef-. a8 r8 \bar "||" |
+      ef-. af( g) f-. f( ef) d-. df-. c( cf) bf-. bff-. |
+      af( g af) c-. ef( af,) c-. ef-. af8 r8 \bar "||" |
       f16-. c( b c df c b c ) e-. c( b c) |
       
       f-. c-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. f-. c-. |
       g' c,( b c df c b c) e-. c( b c) |
       g'-. c,-. bf'-. c,-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. |
-      f( e) ef-. d-. df( c) b-. bf-. a( af) g-. gf-. |
-      f( af) c-. bf-. af-. g-. f-. ef-. df( e) g-. bf-. |
+      f( e) ef-. d-. df( c) b-. bf-. a( af) g-. gf-. | %slur as on ed1864
+      f( af) c-. bf-. af-. g-. f-. e-. df( e) g-. bf-. | % added natural on first e, as on ed1893
       
       af( f) af-. c-. bf( g) bf-. df-. c( e) g-. e-. |
       e( f) c af f4 r8 f'8 |
@@ -37,8 +38,10 @@
       
       a( g a) df-. f( e f) af-. gf4 \fermata \bar "||" |
       \key df \major
+      % Slurring and phrasing is very different between the two editions
+      % I choose keeping slurring as in ed1864
       f4._\markup { \italic Dolce. }( ef8 df af) |
-      bf4( af) ~af8.( f'16) |
+      bf4( af) ~af8.( f'16) | 
       f4.( ef8 df af) |
       bf4( af8 df) ef-. f-. |
       gf4.( ef8 af8. gf16) |
@@ -52,8 +55,8 @@
       bf4( af8 df) ef-. f-. |
       gf4 ~ gf8( ef af8. gf16) |
       
-      f4. af,8 df f\< |
-      fs4. fs8( es fs) |
+      f4. af,8( df f) | %added sluring as on ed1893
+      fs4.\< fs8( es fs) |
       g4. g8 \! \f ( f e) \bar "||" |
       \key c \major
       \override TupletBracket.bracket-visibility = ##f
@@ -77,19 +80,22 @@
       \key af \major
       f( g af g f c) d-. e-. f( e f) g-. |
       af( bf c bf af g) f-. e-. f-. g-. af-. bf-. |
-      c( df c b c df ef df c b af b) |
+      c( df c b c df ef df c bf af bf) | % flat on last two b, as on ed1893
       g c( df c) g-. c-. f,-. c'-. e,-. c'-. c,-. c'-. |
       f,( g af g f c) d-. e-. f( e f) g-. |
       
       af( bf c bf af g) f-. g-. af-. bf-. c-. df-. |
-      ef-. af( g) f-. f( ef) d-. df-. c( cf) b-. bf-. | %Chech if last bf is bff
+      ef-. af( g) f-. f( ef) d-. df-. c( cf) bf-. bff-. |
       af( g af) c-. ef( af,) c-. ef-. af8 r8 |
       f16-. c( b c df c b c) e-. c( b c) |
       f-. c-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. f-. c-. |
       g'-. c,( b c df c b c) e-. c( b c) |
       g'-. c,-. bf'-. c,-. af'-. c,-. g'-. c,-. f-. c-. e-. c-. |
       f( e) ef-. d-. df( c) b-. bf-. a( af) g-. gf-. | % Added staccattoes
-      f( af) c-. bf-. af-. g-. f-. ef-. df-.( e) g-. bf-. |
+      % Conflict between versions here under :
+      % explicit first ef in ed1864, and explicit e natural in ed1893
+      % e natural seems more logical since there are no ef in surrounding measures
+      f( af) c-. bf-. af-. g-. f-. e-. df-.( e) g-. bf-. |
       af( f) af-. c-. bf( g) bf-. df-. c( e) g-. e-. |
       
       e( f) c-. af-. f( c) f-. af-. g( e) g-. bf-. |

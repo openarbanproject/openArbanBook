@@ -544,3 +544,21 @@
     g16 b d, f    g b d g,
     c8 	\tuplet 3/2 {e16( g e}) c8 \tuplet 3/2 {e16( g e})
     c8 r e r c2 \bar "|." }
+
+"legato 30" = \relative c' {
+    \override Fingering.direction = #DOWN
+    \time 2/4
+    \tuplet 6/4 {c16( e c e c e}         \tuplet 6/4 {c e c e c e}                              |
+    c8) \tuplet 3/2 {g'16-1-2( a g)}     \tuplet 3/2 {e-0( g e)}      \tuplet 3/2 {c( e c)}     |
+    \tuplet 6/4 {g-1-3( b g b g b}       \tuplet 6/4 {g b g b g b}                              |
+    g8) \tuplet 3/2 {f'16( g f)}         \tuplet 3/2 {d( f d)}        \tuplet 3/2 {b-1-3( d b)} |
+    \tuplet 6/4 {c16( e c e c e}         \tuplet 6/4 {c e c e c e}                              |
+    c8) \tuplet 3/2 {g'16-1-2( a g)}     \tuplet 3/2 {e-0( g e)}      \tuplet 3/2 {c( e c)}     |
+    \tuplet 6/4 {a16( cs a cs a cs}      \tuplet 6/4 {a cs a cs a cs}                           |
+    a8) \tuplet 3/2 {e'16-1-2( g e)}     \tuplet 3/2 {cs( e cs)}      \tuplet 3/2 {a( cs a)}    |
+    \tuplet 6/4 {d( f d f d f}           \tuplet 6/4 {d f d f d f}                              |
+    d8) \tuplet 3/2 {d16-1( f d)}        \tuplet 3/2 {b-1-3( d b)}    \tuplet 3/2 {g( b g)}     |
+    \tuplet 6/4 {c-2-3( ef c ef c ef}    \tuplet 6/4 {c ef c ef c ef}                           |
+    c8) \tuplet 3/2 {ef-2( gf ef)}       \tuplet 3/2 {c-2-3( ef c)}   \tuplet 3/2 {a( c a)}     |
+    
+\bar "|.}

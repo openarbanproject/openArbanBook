@@ -50,7 +50,7 @@
     \pageBreak
     
     \tocItem INTRO.preface \markup "Preface"
-    \markup "Placeholder for Preface"
+    \include #( string-append "../assets/LANG/" LC "_Preface.ily" )
     \pageBreak
     
     \tocItem INTRO.harmonics \markup "Table of harmonics"

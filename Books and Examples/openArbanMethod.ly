@@ -19,7 +19,7 @@
 \include "../Intervals.ily"
 
 \book {
-  %\bookOutputName #( string-append "openArbanBook-" lang )
+  %\bookOutputName #( string-append "openArbanMethod-Complete-" lang )
   
   \bookpart { 
     \markup \vspace #10
@@ -46,7 +46,7 @@
     \pageBreak
     
     \tocItem INTRO.biography \markup "Biographical Sketch of Joseph-Jean-Baptiste-Laurent Arban."
-    \markup "Placeholder for Biographical Sketch of Joseph-Jean-Baptiste-Laurent Arban."
+    \include #( string-append "../assets/LANG/" LC "_Biography.ily" )
     \pageBreak
     
     \tocItem INTRO.preface \markup "Preface"

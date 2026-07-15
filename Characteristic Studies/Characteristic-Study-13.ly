@@ -28,7 +28,7 @@
   
   \score {
     \layout { \context { \Score \remove "Bar_number_engraver" }}
-    %% Characteristic study no. 14 - Ed. 1864 p. 205
+    %% Characteristic study no. 13 - Ed. 1864 p. 205
     %%                               Ed. 1893 p. 297
     \relative c'' {
       

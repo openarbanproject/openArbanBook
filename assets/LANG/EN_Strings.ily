@@ -18,3 +18,5 @@ tenthsTitle = "Studies In Tenths"
 
 Study = "Study"
 Studies = "Studies"
+CharacteristicStudy = "Characteristic Study"
+CharacteristicStudies = "Characteristic Studies"

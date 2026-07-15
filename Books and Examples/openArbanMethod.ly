@@ -17,6 +17,7 @@
 \include "../Fanfare_Rhythm.ily"
 \include "../Six-Eight.ily"
 \include "../Intervals.ily"
+\include "../Characteristic_Studies.ily"
 
 \book {
   %\bookOutputName #( string-append "openArbanMethod-Complete-" lang )
@@ -378,59 +379,59 @@
     \pageBreak
     
     \tocItem LAST.CS.first \markup "Characteristic Study n°1"
-    \markup "Placeholder for Characteristic Study n°1"
+    \"characteristic study 1 score"
     \pageBreak
     
     \tocItem LAST.CS.second \markup "Characteristic Study n°2"
-    \markup "Placeholder for Characteristic Study n°2"
+    \"characteristic study 2 score"
     \pageBreak
     
     \tocItem LAST.CS.third \markup "Characteristic Study n°3"
-    \markup "Placeholder for Characteristic Study n°3"
+    \"characteristic study 3 score"
     \pageBreak
     
     \tocItem LAST.CS.fourth \markup "Characteristic Study n°4"
-    \markup "Placeholder for Characteristic Study n°4"
+    \"characteristic study 4 score"
     \pageBreak
     
     \tocItem LAST.CS.fifth \markup "Characteristic Study n°5"
-    \markup "Placeholder for Characteristic Study n°5"
+    \"characteristic study 5 score"
     \pageBreak
     
     \tocItem LAST.CS.sixth \markup "Characteristic Study n°6"
-    \markup "Placeholder for Characteristic Study n°6"
+    \"characteristic study 6 score"
     \pageBreak
     
     \tocItem LAST.CS.seventh \markup "Characteristic Study n°7"
-    \markup "Placeholder for Characteristic Study n°7"
+    \"characteristic study 7 score"
     \pageBreak
     
     \tocItem LAST.CS.eigth \markup "Characteristic Study n°8"
-    \markup "Placeholder for Characteristic Study n°8"
+    \"characteristic study 8 score"
     \pageBreak
     
     \tocItem LAST.CS.ninth \markup "Characteristic Study n°9"
-    \markup "Placeholder for Characteristic Study n°9"
+    \"characteristic study 9 score"
     \pageBreak
     
     \tocItem LAST.CS.tenth \markup "Characteristic Study n°10"
-    \markup "Placeholder for Characteristic Study n°10"
+    \"characteristic study 10 score"
     \pageBreak
     
     \tocItem LAST.CS.eleventh \markup "Characteristic Study n°11"
-    \markup "Placeholder for Characteristic Study n°11"
+    \"characteristic study 11 score"
     \pageBreak
     
-    \tocItem LAST.CS.twelvth \markup "Characteristic Study n°12"
-    \markup "Placeholder for Characteristic Study n°12"
+    \tocItem LAST.CS.twelfth \markup "Characteristic Study n°12"
+    \"characteristic study 12 score"
     \pageBreak
     
     \tocItem LAST.CS.thirteenth \markup "Characteristic Study n°13"
-    \markup "Placeholder for Characteristic Study n°13"
+    \"characteristic study 13 score"
     \pageBreak
     
     \tocItem LAST.CS.fourtheenth \markup "Characteristic Study n°14"
-    \markup "Placeholder for Characteristic Study n°14"
+    \"characteristic study 14 score"
     \pageBreak
     
     \tocItem LAST.fantaisies \markup "Twelve Celebrated Fantaisies and Airs Variés"

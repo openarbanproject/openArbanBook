@@ -26,7 +26,7 @@ three-two =
     #})
 
 \score {
-  %% Characteristic study no. 4 - Ed. 1864 p. 197
+  %% Characteristic study no. 5 - Ed. 1864 p. 197
   %                               Ed. 1893 p. 289
   \relative c'' {
     \numericTimeSignature \time 2/4
